@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  header, .competencias, .estudiantes, footer {
+    margin-bottom: 20px;
+  }
+  .custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 200px;
+  }
+
+  .custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custom-select-trigger {
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: #009e00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .custom-select-trigger:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: white transparent transparent transparent;
+  }
+
+  .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #009e00;
+    border-top: none;
+    background: white;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px;
+    font-size: 18px;
+    line-height: 40px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .custom-option:hover {
+    background-color: #009e00;
+    color: white;
+  }
+
+  .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .estudiantes{
+    padding-top: 50px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #009e00;
+    color: white;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #009e00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .profile {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: -130px;
+    width: 30%;
+    padding: 20px;
+    background-color: #009e00;
+    color: white;
+  }
