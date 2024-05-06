@@ -1,0 +1,45 @@
+main{
+  display: flex;
+  justify-content: right;
+}
+.container{
+  width: 65vw;
+  height: 100vh;
+  background: white;
+  display: grid;
+  gap: 2vh;
+  place-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.container_log{
+  display: grid;
+  gap: 1vw;
+  text-align: left;
+}
+.container_option{
+  display: grid;
+  text-align: left;
+  gap: 2vw;
+}
+.container_option_item_input{
+  display: grid;
+  gap: 0.6vw;
+
+}
+input{
+  width: 20vw;
+  height: 4vh;
+  border-radius: 2vw;
+  border: 1vh solid rgba(0,158, 0, 100%);
+  /* border: none; */
+  border-width: 0.1vh;
+}
+button{
+  width: 20vw;
+  height: 4vh;
+  border-radius: 2vw;
+  background: rgba(0,158, 0, 100%);
+  color: white;
+  border: none;
+}

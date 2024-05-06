@@ -1,0 +1,47 @@
+main{
+  display: flex;
+  background: rgba(0,158, 0, 100%);
+}
+.container{
+  width: 65vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+}
+.container_option{
+  display: grid;
+  text-align: center;
+  gap: 2vw;
+}
+.container_option_item_input{
+  display: grid;
+  gap: 0.6vw;
+  justify-content: left;
+}
+.container_option_item{
+  display: grid;
+  gap: 2vh;
+  text-align:left;
+}
+input{
+  width: 20vw;
+  height: 4vh;
+  border-radius: 2vw;
+  border-color: rgba(0,158, 0, 100%);
+  /* border: none; */
+  border-width: 0.1vh;
+}
+p{
+  font-size: 2.5vw;
+}
+button{
+  width: 20vw;
+  height: 4vh;
+  border-radius: 2vw;
+  border: none;
+}
