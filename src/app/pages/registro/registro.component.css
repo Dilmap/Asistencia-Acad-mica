@@ -1,45 +1,63 @@
 main{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.todo{
+  display: flex;
+  align-items: center;
+  position: relative;
   justify-content: right;
+  width: 5vw;
 }
 .container{
-  width: 65vw;
-  height: 100vh;
-  background: white;
   display: grid;
   gap: 2vh;
-  place-content: center;
-  justify-content: center;
+  position: absolute;
+  left: 18vh;
   text-align: center;
 }
 .container_log{
   display: grid;
-  gap: 1vw;
+  gap: 2vw;
   text-align: left;
+}
+.container_texto{
+  font-weight: 800;
 }
 .container_option{
   display: grid;
   text-align: left;
-  gap: 2vw;
+  gap: 1vw;
 }
 .container_option_item_input{
   display: grid;
   gap: 0.6vw;
-
 }
 input{
   width: 20vw;
   height: 4vh;
   border-radius: 2vw;
   border: 1vh solid rgba(0,158, 0, 100%);
-  /* border: none; */
   border-width: 0.1vh;
 }
-button{
+.container_button button{
   width: 20vw;
   height: 4vh;
   border-radius: 2vw;
   background: rgba(0,158, 0, 100%);
   color: white;
   border: none;
+}
+.container_foto{
+  height: 100vh;
+  position: absolute;
+  bottom: 18vh;
+}
+
+.container_foto img{
+  height: 100vh;
 }
