@@ -1,50 +1,39 @@
 main{
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
   height: 100vh;
-}
-.todo{
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: right;
-  width: 5vw;
+  display: grid;
+  grid-template-columns: 56% 44%;
 }
 .container{
-  display: grid;
-  gap: 2vh;
-  position: absolute;
-  left: 18vh;
-  text-align: center;
-}
-.container_log{
-  display: grid;
-  gap: 2vw;
-  text-align: left;
-}
-.container_texto{
-  font-weight: 800;
+  padding-top: 7vw;
 }
 .container_option{
   display: grid;
   text-align: left;
   gap: 1vw;
 }
+.form_registro{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  width: 22vw;
+}
 .container_option_item_input{
   display: grid;
   gap: 0.6vw;
+}
+.container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+  font-size: 1vw;
 }
 input{
   width: 20vw;
   height: 4vh;
   border-radius: 2vw;
-  border: 1vh solid rgba(0,158, 0, 100%);
-  border-width: 0.1vh;
+  border: 0.1vw solid rgba(0,158, 0, 100%);
+  font-size: 0.8vw;
+  padding: 0.5vw;
 }
-.container_button button{
+button{
   width: 20vw;
   height: 4vh;
   border-radius: 2vw;
@@ -53,11 +42,9 @@ input{
   border: none;
 }
 .container_foto{
-  height: 100vh;
-  position: absolute;
-  bottom: 18vh;
+  position: relative;
+  padding-left: 16vw;
 }
-
 .container_foto img{
-  height: 100vh;
+  width: 40vw;
 }

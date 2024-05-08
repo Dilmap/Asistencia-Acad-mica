@@ -1,50 +1,35 @@
 <link rel="stylesheet" href="registro.component.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <main>
-  <section class="todo">
     <div class="container_foto">
-      <img src="assets\imagen\Group.png" alt="">
+      <img src="assets\imagen\Mujer y lista.svg" alt="">
     </div>
     <div class="container">
-      <div class="container_log">
-        <div class="container_texto">
-          <p>Por favor registre su usuario en el formulario!</p>
-        </div>
+      <form action="" class="form_registro">
+        <h3 class="roboto-bold">Por favor registre su usuario en el formulario!</h3>
         <div class="container_option">
-
-          <div class="container_option_item_input">
-            <label for="">Nombre Completo:</label>
-            <input type="text">
-          </div>
-          <div class="container_option_item_input">
-            <label for="">Tipo de Documento :</label>
-            <input type="text">
-          </div>
-          <div class="container_option_item_input">
-            <label for="">Numero de Documento :</label>
-            <input type="text">
-          </div>
-          <div class="container_option_item_input">
-            <label for="">Email :</label>
-            <input type="text">
-          </div>
-          <div class="container_option_item_input">
-            <label for="">Contraseña :</label>
-            <input type="text">
-          </div>
+            <div class="container_option_item_input">
+              <label for="">Nombre Completo:</label>
+              <input type="text">
+            </div>
+            <div class="container_option_item_input">
+              <label for="">Tipo de Documento :</label>
+              <input type="text">
+            </div>
+            <div class="container_option_item_input">
+              <label for="">Numero de Documento :</label>
+              <input type="text">
+            </div>
+            <div class="container_option_item_input">
+              <label for="">Email :</label>
+              <input type="text">
+            </div>
+            <div class="container_option_item_input">
+              <label for="">Contraseña :</label>
+              <input type="text">
+            </div>
         </div>
-
-      </div>
-      <div class="container_button">
-        <button>Registrarse</button>
-      </div>
-      <div class="container_texto">
-        <p>¿Ya tienes usuario? Ingrese</p>
-      </div>
-
+        <button  class="roboto-bold-italic">Registrarse</button>
+        <p class="roboto-regular">¿Ya tienes usuario? <a class="roboto-bold">Ingrese</a></p>
+      </form>
     </div>
-  </section>
-
 </main>
