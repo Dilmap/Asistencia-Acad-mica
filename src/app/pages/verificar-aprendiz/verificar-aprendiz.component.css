@@ -1,0 +1,68 @@
+main{
+    height: 100vh;
+    padding: 3vw 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+header{
+    display: flex;
+    background-color: #009E00;
+    height: 6vw;
+    border-radius: 1vw;
+    border: 0.1vw solid black;
+    align-items: center;
+    gap: 22vw;
+    color: white;
+    font-size: 1.3vw;
+}
+header img{
+    width: 4vw;
+    margin-left: 2vw;
+}
+section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+section label{
+    font-size: 1.2w
+}
+select{
+    width: 15vw;
+    height: 2vw;
+    color: white;
+    background-color: #008400;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    font-size: 0.8vw;
+    appearance: none;
+}
+.validacion{}
+.validar_datos{
+    display: flex;
+    flex-direction: column;
+    background-color: #009E00;
+    width: 33vw;
+    height: 30vw;
+    border-radius: 1vw;
+    padding: 3vw;
+    color: white;
+    gap: 4vw;
+}
+.validar_datos h3{
+    font-size: 2vw;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.inputs input{
+    width: 15vw;
+    height: 2vw;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    border: none;
+}
+.img_qr{}

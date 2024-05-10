@@ -1,6 +1,6 @@
 main{
   height: 100vh;
-  padding: 3vw 6vw;
+  padding: 3vw 10vw;
   display: flex;
   flex-direction: column;
   gap: 2vw;
@@ -27,10 +27,117 @@ section{
 .perfil_instructor{
   display: flex;
   background-color: #009E00;
-  width: 58vw;
+  width: 53vw;
   height: 6vw;
   border-radius: 0.8vw;
   border: 0.1vw solid black;
-  justify-content: space-around;
+  gap: 11vw;
+  align-items: center;
+}
+.img_perfil{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.img_perfil img{
+  width: 7vw;
+  padding-left: 1vw;
+}
+.img_perfil p{
+  font-size: 2vw;
+  color: white;
+}
+.img_perfil span,.fecha_hora{
+  font-size: 1.5vw;
+  color: white;
+}
+select{
+  background-color: #009E00;
+  width: 18vw;
+  height: 6vw;
+  border-radius: 0.7vw;
+  color: white;
+  padding-left: 1.7vw;
+  font-size: 1vw;
+  appearance: none;
+  border: 0.1vw solid black;
+}
+option{
+  border: 0.1vw solid #009E00;
+  background-color: white;
+  color: black;
+}
+option:hover{
+  background-color: #009E00;
+  border: 0.1vw solid black;
+  color: white;
+}
+.flecha_abajo{
+  position: absolute;
+  right: 11.5vw;
+  top: 15vw;
+  width: 1.5vw;
+}
+h2{
+  font-size: 2vw;
+}
+table{
+  flex-direction: column;
+  display: flex;
+  border: 0.1vw solid black;
+  border-radius: 1vw;
+}
+.encabezado_fichas{
+  background-color: #009E00;
+  display: flex;
+  align-items: center;
+  gap: 7vw;
+  height: 2.5vw;
+  border-bottom: 0.1vw solid black;
+  border-top-right-radius: 0.9vw;
+  border-top-left-radius: 0.9vw;
+  padding-left: 1vw;
+}
+.encabezado_fichas td{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1vw;
+  font-size: 1.2vw;
+  height: 100%;
+  padding-left: 1vw;
+}
+.td_programa{
+  border-left: 0.1vw solid black;
+}
+.tr_list{
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 11.05vw;
+  padding-left: 4vw;
+}
+.tecnologo{
+  margin-left:-5.56vw;
+  padding-left: 4vw !important;
+}
+.tr_list td{
+  font-size: 1.2vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+}
+.formacion{
+  width: 2vw;
+}
+.tr_list button{
+  width: 14vw;
+  height: 2vw;
+  border-radius: 0.5vw;
+  border: none;
+  color: white;
+  background-color: #008400;
+  font-size: 1vw;
 }
 
