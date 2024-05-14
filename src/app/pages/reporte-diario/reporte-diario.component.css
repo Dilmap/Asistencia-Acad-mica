@@ -1,0 +1,74 @@
+main{
+  height: 100vh;
+  padding: 3vw 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+header{
+  display: flex;
+  background-color: #009E00;
+  height: 6vw;
+  border-radius: 1vw;
+  border: 0.1vw solid black;
+  align-items: center;
+  gap: 22vw;
+  color: white;
+  font-size: 1.3vw;
+}
+header img{
+  width: 4vw;
+  margin-left: 2vw;
+}
+.informacion_programa{
+  display: flex;
+}
+.informacion_programa p{
+  font-size: 1.1vw;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  background-color: #009E00;
+  height: 4vw;
+  border: 0.1vw solid black;
+  align-items: center;
+  color: white;
+  border-radius: 1vw;
+}
+.filtros_aplicados{
+  display: flex;
+  gap: 14vw;
+  font-size: 1vw;
+}
+.reportes_filtros{
+  border: 0.1vw solid;
+  border-spacing: 0px;
+}
+.encabezado{
+  background-color: #009E00;
+  height: 3vw;
+  color: white;
+}
+.detalles{
+  border-right: none !important;
+}
+.encabezado th{
+  border-bottom: 0.1vw solid black;
+  border-right: 0.1vw solid black;
+  font-size: 1.2vw;
+}
+.Inasistencia{
+  border-right: none !important;
+}
+.contenido{
+  text-align: center;
+  height: 2vw;
+}
+.contenido td{
+  border-right: 0.1vw solid black;
+  font-size: 1vw;
+}
+.contenido img{
+  width: 1.5vw;
+}

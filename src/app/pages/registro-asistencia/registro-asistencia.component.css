@@ -34,6 +34,10 @@ section{
   gap: 11vw;
   align-items: center;
 }
+.perfil_instructor p{
+  font-size: 1vw;
+  color: white;
+}
 .img_perfil{
   display: flex;
   gap: 2vw;
@@ -44,10 +48,10 @@ section{
   padding-left: 1vw;
 }
 .img_perfil p{
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: white;
 }
-.img_perfil span,.fecha_hora{
+.img_perfil span{
   font-size: 1.5vw;
   color: white;
 }
@@ -79,7 +83,7 @@ option:hover{
   width: 1.5vw;
 }
 h2{
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 table{
   border: 0.1vw solid;
