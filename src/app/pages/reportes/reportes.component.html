@@ -1,7 +1,57 @@
+<link rel="stylesheet" href="reportes.component.css">
 <main>
   <header>
     <img src="assets/imagen/Logo-Blanco.svg" alt="">
     <h1 class="roboto-bold">Sistema de Asistencia</h1>
   </header>
+  <section>
+    <div class="titulo">
+      <img src="assets/imagen/Reportes.png" alt="">
+      <h2>Reportes de Asistencia</h2>
+    </div>
+    <div class="Filtros">
+      <button>Fecha</button>
+      <select class="select_competencias" name="" id="">
+        <option value="" selected disabled hidden>Competencias</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+      </select>
+      <select class="select_ficha" name="" id="">
+      <option value="" selected disabled hidden>Fichas</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      </select>
+    </div>
+    <button class="button_buscar">Buscar</button>
+  </section>
+  <div class="filtros_aplicados">
+    <h3>FECHA:8/4/2024</h3>
+    <h3>COMPETENCIA: Especificacion de requisitos de sofwtare</h3>
+    <h3>FICHA: 2558188</h3>
+  </div>
+  <table class="reportes_filtros">
+    <tr class="encabezado">
+      <th>Fecha</th>
+      <th>Competencia</th>
+      <th>Ficha</th>
+      <th>Hora</th>
+      <th>Asistencias</th>
+      <th>Inasistencias</th>
+      <th class="detalles">Detalles</th>
+    </tr>
+    <tr class="contenido">
+      <td>15/05/2024</td>
+      <td>Competencia Ejemplo</td>
+      <td>123456</td>
+      <td>08:00 AM</td>
+      <td>10</td>
+      <td>2</td>
+      <td class="detalles">Detalles de la sesión</td>
+    </tr>
+  </table>
 </main>
 

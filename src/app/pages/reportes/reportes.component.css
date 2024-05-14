@@ -1,0 +1,97 @@
+main{
+    height: 100vh;
+    padding: 3vw 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+header{
+    display: flex;
+    background-color: #009E00;
+    height: 6vw;
+    border-radius: 1vw;
+    border: 0.1vw solid black;
+    align-items: center;
+    gap: 22vw;
+    color: white;
+    font-size: 1.3vw;
+}
+header img{
+    width: 4vw;
+    margin-left: 2vw;
+}
+section{
+    display: flex;
+    align-items: center;
+    background-color: #009E00;
+    color: white;
+    gap: 12vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border: 0.1vw solid black;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding-left: 1vw;
+}
+.Filtros{
+    display: flex;
+    gap: 4vw;
+}
+.Filtros button,.button_buscar{
+    width: 8vw;
+    height: 2vw;
+    color: white;
+    background-color: #008400;
+    border: none;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+}
+.select_competencias,.select_ficha{
+    width: 9.3vw;
+    height: 2vw;
+    color: white;
+    background-color: #008400;
+    border: none;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    padding-left: 0.5vw;
+    border-right: 0.3vw solid transparent;
+}
+.select_ficha{
+    width: 6.3vw;
+    padding-left: 1vw;
+}
+.filtros_aplicados{
+    display: flex;
+    gap: 14vw;
+    font-size: 1vw;
+}
+.reportes_filtros{
+    border: 0.1vw solid;
+    border-spacing: 0px;
+}
+.encabezado{
+    background-color: #009E00;
+    height: 3vw;
+    color: white;
+}
+.detalles{
+    border-right: none !important;
+}
+.encabezado th{
+    border-bottom: 0.1vw solid black;
+    border-right: 0.1vw solid black;
+    font-size: 1.2vw;
+}
+.contenido{
+    text-align: center;
+    height: 2vw;
+}
+.contenido td{
+    border-right: 0.1vw solid black;
+    font-size: 1vw;
+}
