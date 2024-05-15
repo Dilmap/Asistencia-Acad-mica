@@ -9,7 +9,7 @@ main{
 header{
     display: flex;
     background-color: #009E00;
-    height: 8vw;
+    height: 10vh;
     border-radius: 1vw;
     border: 0.1vw solid black;
     align-items: center;
@@ -31,8 +31,10 @@ header img{
 .eleccion h2{
     font-size: 2vw;
 }
-.eleccion pre{
+.eleccion p{
     font-size: 1.2vw;
+    width: 70vw;
+    line-height: 2vw;
 }
 .container_roles{
     display: flex;
@@ -48,14 +50,14 @@ header img{
 }
 .icon_user{
     position: absolute;
-    top: 34vw;
+    top: 33vw;
     left: 44.9vw;
     width: 2vw;
 }
 .flecha_abajo{
     width: 1.3vw;
     position: absolute;
-    top: 34vw;
+    top: 33vw;
     left: 53.5vw;
 }
 .container_roles h3{
@@ -83,4 +85,107 @@ header img{
     font-size: 1vw;
 }
 
+@media (min-width: 600px) and (max-width:1200px) {
+  main{
+    padding: 3vw 4vw;
+    height: 100vh;
+  }
+  header img{
+    width: 5vw;
+    margin-left: 3vw;
+    height: 8vw;
+  }
+  .eleccion{
+    padding: 1vw 1vw;
+    gap: 6vw;
+  }
+  .eleccion p{
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+  }
+  .eleccion h2{
+    font-size: 2.6vw;
+  }
+  .container_roles{
+    width: 35vw;
+    height: 22vw;
+  }
+  .container_roles select{
+    width: 15vw;
+    height: 4vw;
+    font-size: 1.8vw;
+  }
+  .icon_user{
+    top: 47.2vw;
+    left: 43vw;
+    width: 3vw;
+  }
+  .flecha_abajo{
+    top: 48vw;
+    left: 55vw;
+    width: 1.5vw;
+  }
+  .container_roles h3{
+    font-size: 2.2vw;
+  }
+  .container_roles button{
+    padding: 1vw 4vw;
+    font-size: 1.6vw;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  main{
+    padding: 8vw 4vw;
+    height: 100vh;
+  }
+  header img{
+    width: 10vw;
+  }
+  header{
+    height: 14vw;
+    font-size: 2.5vw;
+    gap: 16vw;
+  }
+  .eleccion{
+    padding: 10vw 5vw;
+    gap: 10vw;
+  }
+  .eleccion h2{
+    width: 50vw;
+  }
+  .eleccion p{
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+  .eleccion h2{
+    font-size: 3.5vw;
+  }
+  .container_roles{
+    width: 60vw;
+    height: 34vw;
+  }
+  .container_roles select{
+    width: 29vw;
+    height: 7vw;
+    font-size: 3vw;
+    text-align: center;
+  }
+  .icon_user{
+    top: 96vw;
+    left: 38vw;
+    width: 5.5vw;
+  }
+  .flecha_abajo{
+    top: 97vw;
+    left: 60vw;
+    width: 3.2vw;
+  }
+  .container_roles h3{
+    font-size: 3.5vw;
+  }
+  .container_roles button{
+    padding: 1vw 4vw;
+    font-size: 3vw;
+  }
 
+}
