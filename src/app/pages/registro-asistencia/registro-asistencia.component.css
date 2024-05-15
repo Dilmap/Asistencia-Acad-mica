@@ -8,13 +8,13 @@ main{
 header{
   display: flex;
   background-color: #009E00;
-  height: 8vw;
+  height: 6vw;
   border-radius: 1vw;
   border: 0.1vw solid black;
   align-items: center;
   gap: 22vw;
   color: white;
-  font-size: 1.6vw;
+  font-size: 1.3vw;
 }
 header img{
   width: 4vw;
