@@ -79,7 +79,7 @@ option:hover{
 .flecha_abajo{
   position: absolute;
   right: 11.5vw;
-  top: 15vw;
+  top: 13vw;
   width: 1.5vw;
 }
 h2{
@@ -96,7 +96,7 @@ table img{
   background-color: #009E00;
   height: 3vw;
   color: white;
-  
+
 }
 .encabezado_fichas th{
   border-bottom: 0.1vw solid black;
@@ -129,4 +129,141 @@ table img{
   font-size: 1vw;
 }
 
+@media (min-width: 700px) and (max-width:1200px) {
+  main{
+    gap: 3.5vw;
+  }
+  header{
+    height: 8vw;
+    gap: 18vw;
+    font-size: 1.7vw;
+  }
+  header img{
+    width: 6vw;
+    margin-left: 2vw;
+  }
+  .perfil_instructor{
+    height: 8vw;
+    gap: 11vw;
+    align-items: center;
+  }
+  h2{
+    font-size: 2vw;
+  }
+  select{
+    background-color: #009E00;
+    width: 22vw;
+    height: 8vw;
+    padding-left: 1.7vw;
+    font-size: 1.3vw;
+  }
+  .flecha_abajo{
+    position: absolute;
+    right: 11.5vw;
+    top: 17.5vw;
+    width: 1.5vw;
+  }
+  .perfil_instructor p{
+    font-size: 1.6vw;
+  }
+  .encabezado_fichas{
+    height: 4.5vw;
+  }
+  table img{
+    width: 4vw;
+  }
+  .tr_list{
+    text-align: center;
+    height: 4vw;
+  }
+  .tr_list button{
+    width: 15vw;
+    height: 3vw;
+    border-radius: 0.8vw;
+    font-size: 1.3vw;
+  }
+  .tr_list td{
+    font-size: 1.8vw;
+  }
+  .encabezado_fichas th{
+    font-size: 1.6vw;
+    height: inherit;
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  main{
+    gap: 4.5vw;
+    padding: 8vw 10vw;
+  }
+  header{
+    height: 14vw;
+    font-size: 2.5vw;
+    gap: 8vw;
+  }
+  header img{
+    width: 10vw;
+  }
+  .perfil_instructor{
+    height: 15vw;
+    width: 80vw;
+    gap: 11vw;
+    align-items: center;
+  }
+  h2{
+    font-size: 3vw;
+  }
+  select{
+    background-color: #009E00;
+    width: 80vw;
+    height: 8vw;
+    text-align: center;
+    padding-left: 1.7vw;
+    font-size: 3vw;
+  }
+  section{
+    display: grid;
+    gap: 4vw;
+  }
+  .img_perfil img{
+    width: 12vw;
+  }
+  .perfil_instructor p{
+    font-size: 3vw;
+    color: white;
+  }
+  .encabezado_fichas{
+    height: 8vw;
+  }
+  table img{
+    display: none;
+  }
+  .tr_list{
+    text-align: center;
+    height: 7.5vw;
 
+  }
+  .tr_list button{
+    width: 18.5vw;
+    height: 5vw;
+    border-radius: 3vw;
+    font-size: 1.8vw;
+  }
+  .tr_list td{
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .encabezado_fichas th{
+    font-size: 2.5vw;
+    height: inherit;
+  }
+  .flecha_abajo{
+    position: absolute;
+    right: 24vw;
+    top: 47vw;
+    width: 3.5vw;
+  }
+  .img_perfil span{
+    font-size: 3vw;
+  }
+
+}
