@@ -5,6 +5,7 @@ main{
 }
 .container{
   padding-top: 7vw;
+  width: 40vw;
 }
 .container_option{
   display: grid;
@@ -16,17 +17,17 @@ main{
   flex-direction: column;
   gap: 2vw;
   align-items: center;
-  width: 22vw;
+  width: 25vw;
 }
 .container_option_item_input{
   display: grid;
   gap: 0.6vw;
 }
 .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 input{
-  width: 20vw;
+  width: 22vw;
   height: 4vh;
   border-radius: 2vw;
   border: 0.1vw solid rgba(0,158, 0, 100%);
@@ -43,8 +44,127 @@ button{
 }
 .container_foto{
   position: relative;
-  padding-left: 16vw;
+  left: 12vw;
 }
 .container_foto img{
-  width: 40vw;
+  width: 46vw;
+}
+.contenedor_img_esquina{
+  display: none;
+}
+.container_logo{
+  display: none;
+  left: 10vw;
+  bottom: 22vw;
+}
+.container_rectangle_top,.container_rectangle_bottom{
+  display: none;
+  position: relative;
+}
+.container_rectangle_bottom img{
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_foto{
+    display: none;
+  }
+  .container{
+    padding-top: 0vw;
+    width: 50vw;
+  }
+  .form_registro{
+    gap: 3vw;
+    align-items: center;
+    width: 50vw;
+  }
+  .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+    font-size: 1.8vw;
+  }
+  input{
+    width: 28vw;
+    font-size: 1.4vw;
+  }
+  .container_rectangle_top,.container_rectangle_bottom{
+    display: block;
+    left: 0;
+  }
+  .container_rectangle_top{
+    position: absolute;
+    top: 0;
+  }
+  .container_rectangle_bottom{
+    position: absolute;
+    bottom: 0;
+  }
+  .container_rectangle_top img{
+    width: 30vw;
+  }
+  .container_rectangle_bottom img{
+    width: 25vw;
+    bottom: 0;
+  }
+
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_foto{
+    display: none;
+  }
+  .form_registro{
+    gap: 5vw;
+    text-align: center;
+    width: 41vw;
+  }
+  .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+    font-size: 2.8vw;
+  }
+  .form_registro h3{
+    font-size: 3.2vw;
+  }
+  input{
+    width: 50vw;
+    font-size: 2.2vw;
+    border-radius: 4dvw;
+  }
+  .container_option{
+    gap: 2vw;
+  }
+  button{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 4vw;
+  }
+  .contenedor_img_esquina{
+    height: 100vh;
+    position: relative;
+    display: block;
+  }
+  .contenedor_img_esquina img{
+    position: absolute;
+    bottom: 0;
+    width: 38vw;
+    right: 44vw;
+  }
+  .container_logo{
+    display: block;
+    position: relative;
+  }
+  .container_logo img{
+    width: 18vw;
+    position: absolute;
+  }
+  .container{
+    padding-top: 15vw;
+  }
 }
