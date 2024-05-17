@@ -81,8 +81,11 @@ button{
   width: 15vw;
   left: 0;
 }
+.logo_verde{
+  display: none;
+}
 
-@media (min-width:700px) and (max-width:1100px) {
+@media (min-width:600px) and (max-width:1100px) {
   .container{
     padding-right: 16vw;
   }
@@ -113,8 +116,59 @@ button{
     width: 20vw;
   }
 }
-@media  (max-width:700px){
+@media  (max-width:600px){
   main{
     background-color: white;
+  }
+  .contenedor_adapter_img{
+    display: none;
+  }
+  .logo_verde{
+    display: flex;
+  }
+  .logo_verde{
+    display: flex;
+    position: absolute;
+    top: 4vw;
+    left: 26vw;
+  }
+  .container{
+    width: 100%;
+    padding-top: 22vw;
+    text-align: none;
+    justify-content: none;
+    place-items: none;
+  }
+  .container_option_item{
+    gap: 8vw;
+  }
+  .container_option_item h1{
+    font-size: 8vw;
+  }
+  .container_input{
+    gap: 5vw;
+  }
+  .container_option_item_input{
+    gap: 3.6vw;
+  }
+  .container_option_item label{
+    font-size: 5vw;
+  }
+  input{
+    width: 71vw;
+    height: 7vw;
+    border-radius: 5vw;
+  }
+  button{
+    width: 70vw;
+    height: 8vw;
+    border-radius: 4vw;
+    font-size: 5vw;
+  }
+  p{
+    font-size: 3.5vw;
+  }
+  .contenedor_img_esquina img{
+    width: 29vw;
   }
 }
