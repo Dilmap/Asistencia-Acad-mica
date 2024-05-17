@@ -23,8 +23,12 @@ main{
   display: grid;
   gap: 0.6vw;
 }
-.container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+.container_option_item_input label,.form_registro p, .form_registro button{
   font-size: 1.2vw;
+}
+.form_registro h3{
+  font-size: 1.3vw;
+  width: 23vw;
 }
 input{
   width: 22vw;

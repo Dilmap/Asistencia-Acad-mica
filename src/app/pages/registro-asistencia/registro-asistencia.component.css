@@ -3,14 +3,13 @@ main{
   padding: 3vw 10vw;
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 3vw;
 }
 header{
   display: flex;
   background-color: #009E00;
   height: 6vw;
   border-radius: 1vw;
-  border: 0.1vw solid black;
   align-items: center;
   gap: 22vw;
   color: white;
@@ -22,20 +21,22 @@ header img{
 }
 section{
   display: flex;
-  justify-content: space-between;
+  gap: 3vw;
 }
 .perfil_instructor{
   display: flex;
   background-color: #009E00;
   width: 53vw;
   height: 6vw;
-  border-radius: 0.8vw;
-  border: 0.1vw solid black;
-  gap: 11vw;
+  border-top-left-radius: 0.8vw;
+  border-bottom-left-radius: 0.8vw;
+  gap: 15vw;
   align-items: center;
 }
 .perfil_instructor p{
-  font-size: 1vw;
+  font-size: 1.2vw;
+  display: grid;
+  gap: 0.5vw;
   color: white;
 }
 .img_perfil{
@@ -57,14 +58,14 @@ section{
 }
 select{
   background-color: #009E00;
-  width: 18vw;
+  width: 24vw;
   height: 6vw;
-  border-radius: 0.7vw;
+  border-top-right-radius: 0.8vw;
+  border-bottom-right-radius: 0.8vw;
   color: white;
   padding-left: 1.7vw;
-  font-size: 1vw;
+  font-size: 1.3vw;
   appearance: none;
-  border: 0.1vw solid black;
 }
 option{
   border: 0.1vw solid #009E00;
@@ -73,20 +74,20 @@ option{
 }
 option:hover{
   background-color: #009E00;
-  border: 0.1vw solid black;
+  border: 0.1vw solid gray;
   color: white;
 }
 .flecha_abajo{
   position: absolute;
-  right: 11.5vw;
-  top: 13vw;
+  right: 13vw;
+  top: 14vw;
   width: 1.5vw;
 }
 h2{
   font-size: 1.5vw;
 }
 table{
-  border: 0.1vw solid;
+  border: 0.1vw solid gray;
   border-spacing: 0px;
 }
 table img{
@@ -99,8 +100,8 @@ table img{
 
 }
 .encabezado_fichas th{
-  border-bottom: 0.1vw solid black;
-  border-right: 0.1vw solid black;
+  border-bottom: 0.1vw solid gray;
+  border-right: 0.1vw solid gray;
   font-size: 1.2vw;
   height: inherit;
 }
@@ -116,7 +117,7 @@ table img{
   height: 2.5vw;
 }
 .tr_list td{
-  border-right: 0.1vw solid black;
+  border-right: 0.1vw solid gray;
   font-size: 1vw;
 }
 .tr_list button{
@@ -155,11 +156,11 @@ table img{
     width: 22vw;
     height: 8vw;
     padding-left: 1.7vw;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
   .flecha_abajo{
     position: absolute;
-    right: 11.5vw;
+    right: 13vw;
     top: 17.5vw;
     width: 1.5vw;
   }
@@ -170,7 +171,7 @@ table img{
     height: 4.5vw;
   }
   table img{
-    width: 4vw;
+    width: 3.5vw;
   }
   .tr_list{
     text-align: center;
@@ -186,8 +187,11 @@ table img{
     font-size: 1.8vw;
   }
   .encabezado_fichas th{
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     height: inherit;
+  }
+  .encabezado_fichas div{
+    gap: 0.8vw;
   }
 }
 @media (min-width: 500px) and (max-width: 700px) {
@@ -207,17 +211,18 @@ table img{
     height: 15vw;
     width: 80vw;
     gap: 11vw;
+    border-radius: 0.8vw;
     align-items: center;
   }
   h2{
     font-size: 3vw;
   }
   select{
-    background-color: #009E00;
     width: 80vw;
     height: 8vw;
     text-align: center;
     padding-left: 1.7vw;
+    border-radius: 0.8vw;
     font-size: 3vw;
   }
   section{
@@ -249,11 +254,12 @@ table img{
     font-size: 1.8vw;
   }
   .tr_list td{
-    font-size: 2vw;
+    font-size: 2.2vw;
     padding: 1vw;
   }
   .encabezado_fichas th{
-    font-size: 2.5vw;
+    font-size: 2.8vw;
+    padding: 1vw;
     height: inherit;
   }
   .flecha_abajo{
@@ -265,5 +271,10 @@ table img{
   .img_perfil span{
     font-size: 3vw;
   }
-
+  .tipo_formacion{
+    display: none;
+  }
+  .td_programa_tecnologo{
+    display: none;
+  }
 }

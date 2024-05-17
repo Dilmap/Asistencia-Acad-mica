@@ -9,9 +9,8 @@ main{
 header{
     display: flex;
     background-color: #009E00;
-    height: 10vh;
+    height: 6vw;
     border-radius: 1vw;
-    border: 0.1vw solid black;
     align-items: center;
     gap: 22vw;
     color: white;
@@ -26,13 +25,13 @@ header img{
     flex-direction: column;
     align-items: center;
     height: max-content;
-    gap: 3vw;
+    gap: 2vw;
 }
 .eleccion h2{
     font-size: 2vw;
 }
 .eleccion p{
-    font-size: 1.2vw;
+    font-size: 1vw;
     width: 70vw;
     line-height: 2vw;
 }
@@ -46,7 +45,6 @@ header img{
     border-radius: 1vw;
     padding: 2vw 3vw;
     align-items: center;
-    border: 0.1vw solid black;
 }
 .container_iconos{
   position: relative;
@@ -154,6 +152,7 @@ header img{
   }
   .eleccion h2{
     width: 50vw;
+    text-align: center;
   }
   .eleccion p{
     font-size: 2.5vw;
