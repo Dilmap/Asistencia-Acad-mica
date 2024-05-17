@@ -76,6 +76,7 @@ section{
 .filtros_aplicados{
     display: flex;
     gap: 14vw;
+    flex-wrap: wrap;
     font-size: 1vw;
 }
 .reportes_filtros{
@@ -102,6 +103,9 @@ section{
 .contenido td{
     border-right: 0.1vw solid black;
     font-size: 1vw;
+}
+.indicador_iconos{
+    display:none ;
 }
 @media (min-width:600px) and (max-width:1100px){
     section{
@@ -141,5 +145,97 @@ section{
     }
     .contenido td{
         font-size: 1.5vw;
+    }
+}
+@media (max-width:600px){
+    main{
+        gap: 5vw;
+    }
+    header{
+        height: 19vw;
+        border-radius: 2vw;
+        gap: 7vw;
+        font-size: 2.5vw;
+    }
+    header img{
+        width: 13vw;
+        margin-left: 8vw;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        height: 19vw;
+        border-radius: 2vw;
+        flex-direction: column;
+        padding: 2vw;
+        align-items: flex-start;
+
+    }
+    .titulo{
+        gap: 2.5vw;
+        font-size: 3vw;
+    }
+    .titulo img{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .Filtros button,.button_buscar{
+        width: 15vw;
+        height: 6vw;
+        font-size: 3vw;
+        border-radius: 1.5vw;
+    }
+    .select_competencias,.select_ficha{
+        width: 24.3vw;
+        height: 6vw;
+        font-size: 3vw;
+    }
+    .select_ficha{
+        width: 15.3vw;
+    }
+    .filtros_aplicados{
+        gap: 6vw;
+        font-size: 2.5vw;
+    }
+    .indicador_iconos{
+        display: flex;
+        gap: 7vw;
+        font-size: 2.9vw;
+    }
+    .indicador_iconos article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vw;
+    }
+    .indicador_iconos img{
+        width: 3vw;
+    }
+    .reportes_filtros{
+        display: none;
+    }
+    .responsive{
+        display:inline-table;
+    }
+    .encabezado{
+        height: 9vw;
+    }
+    .encabezado th{
+        font-size: 3.2vw;
+    }
+    .encabezado img{
+        width: 4vw;
+    }
+    .contenido{
+        height: 9vw;
+    }
+    .contenido td{
+        font-size: 2.5vw;
+    }
+    .competencia{
+        width: 26vw ;
+    }
+    .fecha{
+        width: 22vw;
     }
 }
