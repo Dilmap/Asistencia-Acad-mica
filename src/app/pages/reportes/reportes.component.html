@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="reportes.component.css">
+<main>
+  <header>
+    <img src="assets/imagen/Logo-Blanco.svg" alt="">
+    <h1 class="roboto-bold">Sistema de Asistencia</h1>
+  </header>
+  <section>
+    <div class="titulo">
+      <img src="assets/imagen/Reportes.png" alt="">
+      <h2>Reportes de Asistencia</h2>
+    </div>
+    <div class="Filtros">
+      <button>Fecha</button>
+      <select class="select_competencias" name="" id="">
+        <option value="" selected disabled hidden>Competencias</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+        <option value="">Desarrollo de componentes informaticos</option>
+      </select>
+      <select class="select_ficha" name="" id="">
+      <option value="" selected disabled hidden>Fichas</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      <option value="">25558188</option>
+      </select>
+      <button class="button_buscar">Buscar</button>
+    </div>
+  </section>
+  <div class="filtros_aplicados">
+    <h3>FECHA:8/4/2024</h3>
+    <h3>FICHA: 2558188</h3>
+    <h3>COMPETENCIA: Especificacion de requisitos de sofwtare</h3>
+  </div>
+  <div class="indicador_iconos">
+    <article>
+      <img src="assets/imagen/Check.png" alt="">
+      <h3>Asistencias</h3>
+    </article>
+    <article>
+      <img src="assets/imagen/Equis.png" alt="">
+      <h3>Inasistencias</h3>
+    </article>
+    <article>
+      <img src="assets/imagen/TresPuntos.png" alt="">
+      <h3>Ver Detalles</h3>     
+    </article>
+  </div>
+  <table class="reportes_filtros">
+    <tr class="encabezado">
+      <th>Fecha</th>
+      <th>Competencia</th>
+      <th>Ficha</th>
+      <th>Hora</th>
+      <th>Asistencias</th>
+      <th>Inasistencias</th>
+      <th class="detalles">Detalles</th>
+    </tr>
+    <tr class="contenido">
+      <td>15/05/2024</td>
+      <td>Competencia Ejemplo</td>
+      <td>123456</td>
+      <td>08:00 AM</td>
+      <td>10</td>
+      <td>2</td>
+      <td class="detalles">Detalles de la sesión</td>
+    </tr>
+  </table>
+  <table class="reportes_filtros responsive">
+    <tr class="encabezado">
+      <th class="fecha">Fecha y hora</th>
+      <th class="competencia">Competencia</th>
+      <th>Ficha</th>
+      <th><img src="assets/imagen/Check.png" alt=""></th>
+      <th><img src="assets/imagen/Equis.png" alt=""></th>
+      <th class="detalles">gdsfgs</th>
+    </tr>
+    <tr class="contenido">
+      <td>15/05/2024
+        <br>08:00-11:00
+      </td>
+      <td>Competencia Ejemplo</td>
+      <td>123456</td>
+      <td>10</td>
+      <td>2</td>
+      <td class="detalles"><img src="assets/imagen/TresPuntos.png" alt=""></td>
+    </tr>
+  </table>
+</main>
+

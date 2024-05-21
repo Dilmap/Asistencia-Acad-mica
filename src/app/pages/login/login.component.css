@@ -1,0 +1,174 @@
+main{
+  display: flex;
+  background: rgba(0,158, 0, 100%);
+}
+.container{
+  width: 65vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+}
+.container_option{
+  display: grid;
+  text-align: center;
+  gap: 2vw;
+}
+.container_option_item_input{
+  display: grid;
+  gap: 0.6vw;
+  justify-content: left;
+}
+.container_option_item{
+  display: grid;
+  gap: 2vw;
+}
+.container_option_item label{
+  font-size: 1vw;
+}
+.container_option_item h1{
+  font-size: 2.5vw;
+  text-align: center;
+}
+input{
+  width: 22vw;
+  height: 2vw;
+  border-radius: 2vw;
+  border: 0.1vw solid rgba(0, 158, 0, 100%);
+  padding: 0.5vw;
+  font-size: 0.8vw;
+}
+.container_input{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  text-align: left;
+}
+.contenedor_img_esquina{
+  position: absolute;
+}
+p{
+  font-size: 1vw;
+}
+button{
+  width: 22vw;
+  height: 2vw;
+  border-radius: 2vw;
+  background-color: rgba(0, 158, 0, 100%);
+  color: white;
+  font-size: 1vw;
+  border: none;
+}
+
+.contenedor_adapter_img{
+  position: absolute;
+  right: 6.55vw;
+  
+}
+.contenedor_adapter_img img{
+  width: 43vw;
+}
+.contenedor_img_esquina{
+  height: 100vh;
+}
+.contenedor_img_esquina img{
+  position: absolute;
+  bottom: 0;
+  width: 15vw;
+  left: 0;
+}
+.logo_verde{
+  display: none;
+}
+
+@media (min-width:600px) and (max-width:1100px) {
+  .container{
+    padding-right: 16vw;
+  }
+  .container_option_item h1{
+    font-size: 4vw;
+  }
+  .container_option_item{
+    gap: 6vw;
+    text-align: none;
+  }
+  .container_input{
+    gap: 3vw;
+  }
+  .container_option_item label{
+    font-size: 2.5vw;
+  }
+  input,button{
+    width: 28vw;
+    height: 4vw;
+  }
+  button{
+    font-size: 2vw;
+  }
+  p{
+    font-size: 1.8vw;
+  }
+  .contenedor_img_esquina img{
+    width: 20vw;
+  }
+}
+@media  (max-width:600px){
+  main{
+    background-color: white;
+  }
+  .contenedor_adapter_img{
+    display: none;
+  }
+  .logo_verde{
+    display: flex;
+  }
+  .logo_verde{
+    display: flex;
+    position: absolute;
+    top: 4vw;
+    left: 26vw;
+  }
+  .container{
+    width: 100%;
+    padding-top: 22vw;
+    text-align: none;
+    justify-content: none;
+    place-items: none;
+  }
+  .container_option_item{
+    gap: 8vw;
+  }
+  .container_option_item h1{
+    font-size: 8vw;
+  }
+  .container_input{
+    gap: 5vw;
+  }
+  .container_option_item_input{
+    gap: 3.6vw;
+  }
+  .container_option_item label{
+    font-size: 5vw;
+  }
+  input{
+    width: 71vw;
+    height: 7vw;
+    border-radius: 5vw;
+  }
+  button{
+    width: 70vw;
+    height: 8vw;
+    border-radius: 4vw;
+    font-size: 5vw;
+  }
+  p{
+    font-size: 3.5vw;
+  }
+  .contenedor_img_esquina img{
+    width: 29vw;
+  }
+}

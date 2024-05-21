@@ -1,0 +1,207 @@
+main{
+    height: 100vh;
+    padding: 3vw 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+header{
+    display: flex;
+    background-color: #009E00;
+    height: 6vw;
+    border-radius: 1vw;
+    align-items: center;
+    gap: 22vw;
+    color: white;
+    font-size: 1.3vw;
+}
+header img{
+    width: 4vw;
+    margin-left: 2vw;
+}
+.eleccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    gap: 2vw;
+}
+.eleccion h2{
+    font-size: 2vw;
+}
+.eleccion p{
+    font-size: 1vw;
+    width: 70vw;
+    line-height: 2vw;
+}
+.container_roles{
+    display: flex;
+    flex-direction: column;
+    background-color: #009E00;
+    width: 25vw;
+    height: 16vw;
+    gap: 2.5vw;
+    border-radius: 1vw;
+    padding: 2vw 3vw;
+    align-items: center;
+}
+.container_iconos{
+  position: relative;
+  display: flex;
+  gap: 2vw;
+}
+.container_radio{
+  color: white;
+  gap: 0.5vw;
+  display: flex;
+  font-size: 1.2vw;
+}
+.icon_user{
+    position: absolute;
+    top: 0.5vw;
+    left: 0.9vw;
+    width: 2vw;
+}
+.flecha_abajo{
+    width: 1.3vw;
+    position: absolute;
+    top: 0.7vw;
+    left: 9.5vw;
+}
+.container_roles h3{
+    color: white;
+    font-size: 1.3vw;
+}
+.container_roles select{
+    background-color: #008400;
+    border: none;
+    width: 12vw;
+    height: 3vw;
+    border-radius: 0.7vw;
+    color: white;
+    font-size: 1.2vw;
+    appearance: none;
+    text-align: center;
+    outline-color: black;
+}
+.container_roles button{
+    padding: 0.5vw 3vw;
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #008400;
+    color: white;
+    font-size: 1vw;
+}
+
+@media (min-width: 700px) and (max-width:1200px) {
+  main{
+    padding: 3vw 4vw;
+    height: 100vh;
+  }
+  header img{
+    width: 5vw;
+    margin-left: 3vw;
+    height: 8vw;
+  }
+  .eleccion{
+    padding: 1vw 1vw;
+    gap: 6vw;
+  }
+  .eleccion p{
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+  }
+  .eleccion h2{
+    font-size: 2.6vw;
+  }
+  .container_roles{
+    width: 35vw;
+    height: 22vw;
+    gap: 3vw;
+    border-radius: 2vw;
+  }
+  .container_radio{
+    font-size: 1.8vw;
+  }
+  .container_roles select{
+    width: 18vw;
+    height: 5vw;
+    font-size: 1.8vw;
+  }
+  .icon_user{
+    width: 3vw;
+  }
+  .flecha_abajo{
+    width: 1.5vw;
+    left: 14vw;
+    top: 1.5vw;
+  }
+  .container_roles h3{
+    font-size: 2.2vw;
+  }
+  .container_roles button{
+    padding: 1vw 4vw;
+    font-size: 1.6vw;
+  }
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  main{
+    padding: 8vw 4vw;
+    height: 100vh;
+  }
+  header img{
+    width: 10vw;
+  }
+  header{
+    height: 14vw;
+    font-size: 2.5vw;
+    gap: 16vw;
+  }
+  .eleccion{
+    padding: 10vw 5vw;
+    gap: 10vw;
+  }
+  .eleccion h2{
+    width: 50vw;
+    text-align: center;
+  }
+  .eleccion p{
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+  .eleccion h2{
+    font-size: 3.5vw;
+  }
+  .container_roles{
+    width: 60vw;
+    height: 34vw;
+    gap: 4.8vw;
+    border-radius: 3vw;
+  }
+  .container_radio{
+    font-size: 3vw;
+  }
+  .container_roles select{
+    width: 29vw;
+    height: 7vw;
+    border-radius: 1.3vw;
+    font-size: 3vw;
+  }
+  .icon_user{
+    width: 5.5vw;
+  }
+  .flecha_abajo{
+    width: 3.2vw;
+    left: 24vw;
+    top: 1.5vw;
+  }
+  .container_roles h3{
+    font-size: 3.5vw;
+  }
+  .container_roles button{
+    padding: 1vw 4vw;
+    font-size: 3vw;
+  }
+
+}

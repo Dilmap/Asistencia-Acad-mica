@@ -1,0 +1,166 @@
+main{
+  height: 100vh;
+  padding: 3vw 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+header{
+  display: flex;
+  background-color: #009E00;
+  height: 6vw;
+  border-radius: 1vw;
+  align-items: center;
+  gap: 22vw;
+  color: white;
+  font-size: 1.3vw;
+}
+header img{
+  width: 4vw;
+  margin-left: 2vw;
+}
+.informacion_programa{
+  display: flex;
+}
+.informacion_programa p{
+  font-size: 1.1vw;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  background-color: #009E00;
+  height: 4vw;
+  align-items: center;
+  color: white;
+  border-radius: 1vw;
+}
+.filtros_aplicados{
+  display: flex;
+  gap: 14vw;
+  font-size: 1vw;
+}
+.reportes_filtros{
+  border: 0.1vw solid gray;
+  border-spacing: 0px;
+}
+.encabezado{
+  background-color: #009E00;
+  height: 3vw;
+  color: white;
+}
+.detalles{
+  border-right: none !important;
+}
+.encabezado th{
+  border-bottom: 0.1vw solid gray;
+  border-right: 0.1vw solid gray;
+  font-size: 1.2vw;
+}
+.Inasistencia{
+  border-right: none !important;
+}
+.contenido{
+  text-align: center;
+  height: 2vw;
+}
+.contenido td{
+  border-right: 0.1vw solid gray;
+  font-size: 1vw;
+}
+.contenido img{
+  width: 1.5vw;
+}
+.programa{
+  gap: 0.5vw;
+  display: grid;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  main{
+    gap: 3.5vw;
+  }
+  header{
+    height: 12vw;
+    font-size: 2.4vw;
+    gap: 8vw;
+  }
+  header img{
+    width: 9vw;
+  }
+  .informacion_programa p{
+    font-size: 1.6vw;
+  }
+  section{
+    height: 10vw;
+    padding: 2vw;
+    gap: 5vw;
+    text-align: center;
+  }
+  .encabezado{
+    height: 5vw;
+  }
+  .encabezado th{
+    font-size: 1.5vw;
+    padding: 1vw;
+  }
+  .contenido{
+    height: 5vw;
+  }
+  .contenido td{
+    font-size: 1.5vw;
+  }
+  .contenido img{
+    width: 2.5vw;
+  }
+  #programa{
+    width: 40vw;
+  }
+  .programa{
+    gap: 2vw;
+  }
+}
+@media (min-width:500px) and (max-width: 700px) {
+  main{
+    gap: 4.5vw;
+    padding: 8vw 10vw;
+  }
+  header{
+    height: 14vw;
+    font-size: 2.5vw;
+    gap: 8vw;
+  }
+  header img{
+    width: 10vw;
+  }
+  .informacion_programa p{
+    font-size: 2.3vw;
+  }
+  section{
+    height: 18vw;
+    text-align: center;
+  }
+  .encabezado{
+    height: 5vw;
+  }
+  .encabezado th{
+    font-size: 2.4vw;
+    padding: 1vw;
+  }
+  .contenido td{
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  .contenido img{
+    width: 4vw;
+  }
+  #programa{
+    width: 40vw;
+  }
+  .programa{
+    gap: 2vw;
+  }
+  .hora{
+    display: none;
+  }
+
+}
