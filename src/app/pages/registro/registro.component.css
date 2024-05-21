@@ -23,6 +23,17 @@ main{
   display: grid;
   gap: 0.6vw;
 }
+.container_option_item_input select{
+  width: 22vw;
+  height: 4.5vh;
+  color: white;
+  background-color: #008400;
+  border: none;
+  font-size: 1vw;
+  border-radius: 1vw;
+  padding-left: 0.5vw;
+  border-right: 0.3vw solid transparent;
+}
 .container_option_item_input label,.form_registro p, .form_registro button{
   font-size: 1.2vw;
 }
