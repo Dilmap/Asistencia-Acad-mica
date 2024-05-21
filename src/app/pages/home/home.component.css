@@ -40,14 +40,22 @@ header img{
     flex-direction: column;
     background-color: #009E00;
     width: 25vw;
-    height: 18vw;
-    gap: 2vw;
+    height: 16vw;
+    gap: 2.5vw;
     border-radius: 1vw;
     padding: 2vw 3vw;
     align-items: center;
 }
 .container_iconos{
   position: relative;
+  display: flex;
+  gap: 2vw;
+}
+.container_radio{
+  color: white;
+  gap: 0.5vw;
+  display: flex;
+  font-size: 1.2vw;
 }
 .icon_user{
     position: absolute;
@@ -110,7 +118,11 @@ header img{
   .container_roles{
     width: 35vw;
     height: 22vw;
+    gap: 3vw;
     border-radius: 2vw;
+  }
+  .container_radio{
+    font-size: 1.8vw;
   }
   .container_roles select{
     width: 18vw;
@@ -164,8 +176,11 @@ header img{
   .container_roles{
     width: 60vw;
     height: 34vw;
-    gap: 4vw;
+    gap: 4.8vw;
     border-radius: 3vw;
+  }
+  .container_radio{
+    font-size: 3vw;
   }
   .container_roles select{
     width: 29vw;

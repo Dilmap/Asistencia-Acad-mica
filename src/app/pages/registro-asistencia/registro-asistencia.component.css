@@ -72,11 +72,11 @@ option{
   background-color: white;
   color: black;
 }
-option:hover{
+/* option:hover{
   background-color: #009E00;
-  border: 0.1vw solid gray;
+  border: 0.5vw solid gray;
   color: white;
-}
+} */
 .flecha_abajo{
   position: absolute;
   right: 13vw;
@@ -153,7 +153,6 @@ table img{
   }
   select{
     background-color: #009E00;
-    width: 22vw;
     height: 8vw;
     padding-left: 1.7vw;
     font-size: 1.4vw;

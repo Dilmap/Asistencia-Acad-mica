@@ -88,6 +88,10 @@ button{
     align-items: center;
     width: 50vw;
   }
+  .form_registro h3{
+    width: 28vw;
+    text-align: center;
+  }
   .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
     font-size: 1.8vw;
   }
@@ -134,7 +138,8 @@ button{
     font-size: 2.8vw;
   }
   .form_registro h3{
-    font-size: 3.2vw;
+    width: 40vw;
+    text-align: center;
   }
   input{
     width: 50vw;
@@ -142,7 +147,7 @@ button{
     border-radius: 4dvw;
   }
   .container_option{
-    gap: 2vw;
+    gap: 2.5vw;
   }
   button{
     width: 30vw;
