@@ -7,11 +7,12 @@ import { RegistroAsistenciaComponent } from './pages/registro-asistencia/registr
 import { VerificarAprendizComponent } from './pages/verificar-aprendiz/verificar-aprendiz.component';
 import { ReporteDiarioComponent } from './pages/reporte-diario/reporte-diario.component';
 import { ReportesComponent } from './pages/reportes/reportes.component';
+import { QrcodeComponent } from './pages/qrcode/qrcode.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, RegistroComponent,HomeComponent,RegistroAsistenciaComponent,VerificarAprendizComponent,ReporteDiarioComponent,ReportesComponent],
+  imports: [RouterOutlet, LoginComponent, RegistroComponent,HomeComponent,RegistroAsistenciaComponent,VerificarAprendizComponent,ReporteDiarioComponent,ReportesComponent,QrcodeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
