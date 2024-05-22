@@ -13,27 +13,23 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './registro-asistencia.component.html',
   styleUrl: './registro-asistencia.component.css'
 })
-export class RegistroAsistenciaComponent implements OnInit{
+
+export class RegistroAsistenciaComponent {
   isDivVisible: boolean = false;
 
-  id= ''
-  instructor= new instructorModel("", "", "", "", "")
+  // id= ''
+  // instructor= new instructorModel("", "", "", "", "")
 
-  constructor(
-    private instructorService: InstructorService,
-    private route: ActivatedRoute,
-    private router: Router
-  ){ }
+  // constructor(
+  //   private instructorService: InstructorService,
+  //   private route: ActivatedRoute,
+  // ){ }
 
 
-  ngOnInit(){
-    this.id = this.route.snapshot.params['id']
-    if(this.id){
-      this.instructorService.obtenerInstructor(this.id).subscribe(data =>{
-        this.instructor = data[0]
-      });
-    }
-  }
+  // ngOnInit(){
+  //   this.id = this.route.snapshot.params['id']
+  //   this.instructorService.obtenerInstructor(this.id)
+  // }
 
   toggleDiv() {
     this.isDivVisible = !this.isDivVisible;
