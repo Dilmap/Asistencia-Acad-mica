@@ -283,7 +283,7 @@ CREATE TABLE `tipo_documento` (
 
 LOCK TABLES `tipo_documento` WRITE;
 /*!40000 ALTER TABLE `tipo_documento` DISABLE KEYS */;
-INSERT INTO `tipo_documento` VALUES (1,'Cedula de ciudadania'),(2,'Tarjeta de identidad'),(3,'Permiso por proteccion personal');
+INSERT INTO `tipo_documento` VALUES (1,'Cedula de ciudadania'),(2,'Tarjeta de identidad'),(3,'Permiso por proteccion temporal'),(4,'Cedula de extranjería');
 /*!40000 ALTER TABLE `tipo_documento` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
