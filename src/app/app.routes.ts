@@ -10,9 +10,6 @@ import { ReportesComponent } from './pages/reportes/reportes.component';
 
 export const routes: Routes = [
   {
-    path: '**', redirectTo: 'reporte',
-  },
-  {
     path: 'home', title: 'Home', component: HomeComponent,
   },
   {
@@ -33,4 +30,7 @@ export const routes: Routes = [
   {
     path: 'reporteDiario', title: 'Reporte Diario', component: ReporteDiarioComponent,
   },
+  {
+    path: '**', redirectTo: 'registroAsistencia',
+  }
 ];
