@@ -11,7 +11,6 @@ header{
     background-color: #009E00;
     height: 6vw;
     border-radius: 1vw;
-    border: 0.1vw solid black;
     align-items: center;
     gap: 22vw;
     color: white;
@@ -29,7 +28,6 @@ section{
     justify-content: space-between;
     height: 4vw;
     border-radius: 1vw;
-    border: 0.1vw solid black;
 }
 .titulo{
     display: flex;
@@ -75,12 +73,12 @@ section{
 }
 .filtros_aplicados{
     display: flex;
-    gap: 14vw;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-size: 1vw;
 }
 .reportes_filtros{
-    border: 0.1vw solid;
+    border: 0.1vw solid gray;
     border-spacing: 0px;
 }
 .encabezado{
@@ -92,8 +90,8 @@ section{
     border-right: none !important;
 }
 .encabezado th{
-    border-bottom: 0.1vw solid black;
-    border-right: 0.1vw solid black;
+    border-bottom: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
     font-size: 1.2vw;
 }
 .contenido{
@@ -101,7 +99,7 @@ section{
     height: 2vw;
 }
 .contenido td{
-    border-right: 0.1vw solid black;
+    border-right: 0.1vw solid gray;
     font-size: 1vw;
 }
 .indicador_iconos{
@@ -242,4 +240,8 @@ section{
     .fecha{
         width: 22vw;
     }
+    .detalles_th p{
+      display: none;
+    }
+
 }

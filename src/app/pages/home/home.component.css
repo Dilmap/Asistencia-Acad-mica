@@ -104,6 +104,11 @@ header img{
     margin-left: 3vw;
     height: 8vw;
   }
+  header{
+    height: 8vw;
+    gap: 18vw;
+    font-size: 1.7vw;
+  }
   .eleccion{
     padding: 1vw 1vw;
     gap: 6vw;
