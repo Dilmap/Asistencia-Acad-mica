@@ -48,12 +48,15 @@ section{
   width: 7vw;
   padding-left: 1vw;
 }
-.img_perfil p{
-  font-size: 1.5vw;
+.img_perfil button{
+  font-size: 1vw;
   color: white;
+  background: none;
+  border: none;
+  text-align: left;
 }
 .img_perfil span{
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: white;
 }
 select{
@@ -72,11 +75,6 @@ option{
   background-color: white;
   color: black;
 }
-/* option:hover{
-  background-color: #009E00;
-  border: 0.5vw solid gray;
-  color: white;
-} */
 .flecha_abajo{
   position: absolute;
   right: 13vw;
@@ -129,6 +127,44 @@ table img{
   background-color: #008400;
   font-size: 1vw;
 }
+
+.actualizar_datos{
+  width: 24vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #009E00;
+  height: 29vw;
+  border-radius: 0.5vw;
+  left: 37vw;
+  top: 9vw;
+  padding: 3vw;
+  gap: 4vw;
+  color: white;
+}
+.actualizar_datos label{
+  font-size: 1vw;
+}
+.actualizar_datos input{
+  width: 100%;
+    height: 1.5vw;
+    border: none;
+    border-radius: 0.3vw;
+}
+.actualizar_datos button{
+  height: 2vw;
+    background-color: #008400;
+    border: none;
+    color: white;
+    font-size: 0.8vw;
+    border-radius: 0.3vw;
+}
+.actu_correo,.actu_contra{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
 
 @media (min-width: 700px) and (max-width:1200px) {
   main{

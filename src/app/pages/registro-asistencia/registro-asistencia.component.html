@@ -8,9 +8,22 @@
     <div class="perfil_instructor">
       <div class="img_perfil">
         <img src="assets/imagen/Icon_User.svg" alt="">
-        <p>Perfil del Instructor <br><span class="roboto-regular">Yasser Pushaina</span></p>
+        <p>Yasser Pushaina <br><button (click)="toggleDiv()" class="roboto-regular">Actualizar Datos</button></p>
       </div>
       <p class="roboto-regular" for="">3/11/2002 <br><span>15:30</span></p>
+    </div>
+    <div *ngIf="isDivVisible" class="actualizar_datos">
+      <div class="actu_contra">
+        <label for="">Correo</label>
+        <input type="text">
+        <br>
+        <label for="">Ingrese nueva contraseña</label>
+        <input type="text">
+        <label for="">Confirmar Contraseña</label>
+        <input type="text">
+        <br>
+        <button>Guardar Correo</button>
+      </div>
     </div>
     <img class="flecha_abajo" src="assets/imagen/flecha_abajo.png" alt="">
     <select class="Competencias" id="">
