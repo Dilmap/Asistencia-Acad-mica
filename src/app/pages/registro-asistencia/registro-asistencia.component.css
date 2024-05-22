@@ -193,7 +193,7 @@ table img{
     gap: 0.8vw;
   }
 }
-@media (min-width: 500px) and (max-width: 700px) {
+@media(max-width: 600px) {
   main{
     gap: 4.5vw;
     padding: 8vw 10vw;
@@ -263,7 +263,7 @@ table img{
   }
   .flecha_abajo{
     position: absolute;
-    right: 24vw;
+    right: 15vw;
     top: 47vw;
     width: 3.5vw;
   }

@@ -67,7 +67,7 @@ button{
 .contenedor_adapter_img{
   position: absolute;
   right: 6.55vw;
-  
+
 }
 .contenedor_adapter_img img{
   width: 43vw;
@@ -124,20 +124,17 @@ button{
     display: none;
   }
   .logo_verde{
-    display: flex;
-  }
-  .logo_verde{
-    display: flex;
-    position: absolute;
-    top: 4vw;
-    left: 26vw;
+    display: grid;
   }
   .container{
-    width: 100%;
-    padding-top: 22vw;
-    text-align: none;
+    width: 100vw;
+    height: 0%;
+    padding-top: 12vw;
+    place-content: none;
     justify-content: none;
-    place-items: none;
+    flex-direction: column;
+    gap: 5vw;
+
   }
   .container_option_item{
     gap: 8vw;
@@ -149,7 +146,7 @@ button{
     gap: 5vw;
   }
   .container_option_item_input{
-    gap: 3.6vw;
+    gap: 1vw;
   }
   .container_option_item label{
     font-size: 5vw;

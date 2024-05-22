@@ -120,7 +120,7 @@ button{
   }
 
 }
-@media (min-width: 500px) and (max-width: 800px) {
+@media(max-width: 600px) {
   main{
     display: flex;
     justify-content: center;
