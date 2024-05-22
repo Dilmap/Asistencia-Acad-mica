@@ -18,6 +18,8 @@ export class RegistroAsistenciaComponent{
 
   // id= ''
   // instructor= new instructorModel("", "", "", "", "")
+  // id= ''
+  // instructor= new instructorModel("", "", "", "", "")
 
   // constructor(
   //   private instructorService: InstructorService,
