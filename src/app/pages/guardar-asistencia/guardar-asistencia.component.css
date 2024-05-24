@@ -1,0 +1,103 @@
+.container_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+table{
+    border: 0.1vw solid gray;
+    border-spacing: 0px;
+    width: 100%;
+}
+table img{
+width: 2vw;
+}
+.encabezado_fichas{
+    background-color: #009E00;
+    height: 3vw;
+    color: white;
+  
+}
+.encabezado_fichas th{
+    border-bottom: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
+    font-size: 1.2vw;
+    height: inherit;
+    padding-left: 2vw;
+    text-align: left;
+}
+.encabezado_fichas div{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    gap: 0.5vw;
+}
+.tr_list{
+    text-align: center;
+    height: 2.5vw;
+}
+.tr_list td{
+    border-right: 0.1vw solid gray;
+    font-size: 1vw;
+    text-align: left;
+    padding-left: 2vw;
+}
+.nombre_td{
+    width: 26vw;
+}
+.tr_list button{
+    width: 3vw;
+    height: 2vw;
+    border: none;
+    background-color: white;
+}
+.td_programa img{
+    width: 1.5vw;
+}
+.estado{
+    font-size: 1vw;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+.Retrasado,.Excusa{
+    width: 1.8vw !important;
+}
+h2{
+    font-size: 1.5vw;
+}
+.indicador_iconos{
+    display: flex;
+    gap: 4vw;
+}
+.indicador_iconos p{
+    font-size: 1vw;
+}
+.indicador_iconos article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+.indicador_iconos img{
+    width: 1.5vw;
+}
+.indicador{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.Buttons{
+    display: flex;
+    gap: 6vw;
+    justify-content: center;
+}
+.Buttons button{
+    background-color: #009E00;
+    border: none;
+    width: 9vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 0.8vw;
+}

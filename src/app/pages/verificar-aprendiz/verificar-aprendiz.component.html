@@ -6,7 +6,7 @@
     </header>
     <section class="sections">
         <div class="validacion">
-            <form class="validar_datos" action="">
+            <form  class="validar_datos" action="">
                 <h3 class="roboto-regular">Ingrese los datos</h3>
                 <section class="inputs">
                   <img class="flecha_abajo" src="assets/imagen/flecha_abajo.png" alt="">
@@ -14,13 +14,13 @@
                     <select id="aprendizSelector" [(ngModel)]="selectedAprendiz" (change)="onSelectionChange($event)" name="" id="">
                         <option value="1" selected>Cedula de Identidad</option>
                         <option value="2">Tarjeta de Identidad</option>
-                        <option value="3">Cedula de Extranjería</option>
-                        <option value="4">Permiso por proteccion temporal</option>
+                        <option value="3">Permiso por proteccion temporal</option>
+                        <option value="4">Cedula de Extranjería</option>
                     </select>
                     <label for="" class="roboto-regular ">Numero de Documento</label>
                     <input type="number" name="" id="">
                 </section>
-                <button>Generar Qr</button>
+                <button type="submit">Generar Qr</button>
             </form>
         </div>
         <div class="img_qr">

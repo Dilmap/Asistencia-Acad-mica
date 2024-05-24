@@ -5,17 +5,19 @@ import { InstructorService } from './../../shared/instructor_crud/instructor.ser
 import { instructorModel } from './../../shared/instructor_crud/instructor.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { GuardarAsistenciaComponent } from '../guardar-asistencia/guardar-asistencia.component';
 
 @Component({
   selector: 'app-registro-asistencia',
   standalone: true,
-  imports: [CommonModule,ActualizarInstructorComponent, FormsModule],
+  imports: [CommonModule,ActualizarInstructorComponent, FormsModule,GuardarAsistenciaComponent],
   templateUrl: './registro-asistencia.component.html',
   styleUrl: './registro-asistencia.component.css'
 })
 export class RegistroAsistenciaComponent{
   isDivVisible: boolean = false;
-
+  guardarAsistencia: boolean = false
+  MostrarFichas: boolean = true
   // id= ''
   // instructor= new instructorModel("", "", "", "", "")
   // id= ''
@@ -39,5 +41,9 @@ export class RegistroAsistenciaComponent{
 
   toggleDiv() {
    this.isDivVisible = !this.isDivVisible;
+  }
+  guardar(){
+    this.guardarAsistencia= !this.guardarAsistencia;
+    this.MostrarFichas= !this.MostrarFichas;
   }
 }

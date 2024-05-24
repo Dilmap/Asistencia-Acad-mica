@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-verificar-aprendiz',
@@ -17,5 +18,5 @@ export class VerificarAprendizComponent {
     console.log('Opción seleccionada:', this.selectedAprendiz);
   }
 
-  
+
 }

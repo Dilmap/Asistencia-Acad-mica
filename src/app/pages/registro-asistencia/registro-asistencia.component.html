@@ -21,8 +21,9 @@
       <option value="">3</option>
     </select>
   </section>
-  <u><h2>FICHAS</h2></u>
-  <table>
+ 
+  <u  *ngIf="MostrarFichas"><h2>FICHAS</h2></u >
+  <table *ngIf="MostrarFichas">
     <tr class="encabezado_fichas">
       <th><div><img src="assets/imagen/Ficha.png" alt="">Numero de Ficha</div></th>
       <th><div><img src="assets/imagen/Programa.png" alt="">Programa de Formación</div></th>
@@ -33,7 +34,8 @@
       <td >2558188</td>
       <td class="td_programa">Analisis y desarrollo de software</td>
       <td class="td_programa_tecnologo">Tecnologo</td>
-      <td><button>Registrar Asistencia</button></td>
+      <td><button (click)="guardar()">Registrar Asistencia</button></td>
     </tr>
   </table>
+  <app-guardar-asistencia *ngIf="guardarAsistencia"></app-guardar-asistencia>
 </main>
