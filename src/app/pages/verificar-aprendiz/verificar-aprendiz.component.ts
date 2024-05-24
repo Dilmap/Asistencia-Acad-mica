@@ -1,6 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-verificar-aprendiz',
@@ -17,6 +18,5 @@ export class VerificarAprendizComponent {
     this.selectedAprendiz = Number(selectElement.value);
     console.log('Opción seleccionada:', this.selectedAprendiz);
   }
-
-
+  constructor(private http: HttpClientModule) {}
 }

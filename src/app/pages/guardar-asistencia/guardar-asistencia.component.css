@@ -8,6 +8,7 @@ table{
     border: 0.1vw solid gray;
     border-spacing: 0px;
     width: 100%;
+    position: relative;
 }
 table img{
 width: 2vw;
@@ -100,4 +101,28 @@ h2{
     border-radius: 0.5vw;
     color: white;
     font-size: 0.8vw;
+}
+.hora_retrasado{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: #009E00;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    top: 5vw;
+    left: 33vw;
+}
+.hora_retrasado input{
+    
+    width: 4vw
+}
+.hora_retrasado button{
+    background-color: white;
+    border: none;
+    border-radius: 0.1vw;
+    font-size: 0.6vw;
+    padding: 0.2vw;
+    width: 4vw;
+    height: 1vw;
 }
