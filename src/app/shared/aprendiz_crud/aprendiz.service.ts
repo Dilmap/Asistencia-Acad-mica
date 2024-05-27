@@ -1,6 +1,6 @@
+import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { aprendizModel } from './aprendiz.model';
 
 
 @Injectable({
@@ -10,7 +10,7 @@ export class AprendizService {
   DATABASE = 'http://localhost:3000'
   constructor(private http: HttpClient) { }
 
-  obtenerAprendices(){
-    return this.http.get<aprendizModel[]>(this.DATABASE + '/aprendices');
+  obtenerAprendices(): Observable<any>{
+    return this.http.get<any>(this.DATABASE+'/aprendices');
   }
 }

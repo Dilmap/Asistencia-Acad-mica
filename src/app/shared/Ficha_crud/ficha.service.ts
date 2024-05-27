@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-
 
 @Injectable({
   providedIn: 'root'
 })
-export class CompetenciaService {
+export class FichaService {
   DATABASE = 'http://localhost:3000'
   constructor(private http: HttpClient) { }
 
-  obtenerCompetencias(): Observable<any>{
-    return this.http.get<any>(this.DATABASE + '/competencias');
+  obtenerFichaPrograma(): Observable<any>{
+    return this.http.get<any>(this.DATABASE+'/fichas/fichaPrograma');
   }
+
 }
