@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ActualizarInstructorComponent } from '../actualizar-instructor/actualizar-instructor.component';
 import { Component, OnInit } from '@angular/core';
-import { InstructorService } from './../../shared/instructor_crud/instructor.service';
-import { instructorModel } from './../../shared/instructor_crud/instructor.model';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { competenciaModel } from '../../shared/competencia_crud/competencia.model';
+import { CompetenciaService } from '../../shared/competencia_crud/competencia.service';
+
 
 @Component({
   selector: 'app-registro-asistencia',
@@ -14,24 +15,20 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './registro-asistencia.component.css'
 })
 
-export class RegistroAsistenciaComponent {
+export class RegistroAsistenciaComponent implements OnInit{
+
   isDivVisible: boolean = false;
 
-  // id= ''
-  // instructor= new instructorModel("", "", "", "", "")
+  competencias: Observable<competenciaModel[]> | undefined
 
-  // constructor(
-  //   private instructorService: InstructorService,
-  //   private route: ActivatedRoute,
-  // ){ }
+  constructor(private competenciaService: CompetenciaService){}
 
-
-  // ngOnInit(){
-  //   this.id = this.route.snapshot.params['id']
-  //   this.instructorService.obtenerInstructor(this.id)
-  // }
+  ngOnInit(){
+    this.competencias = this.competenciaService.obtenerCompetencias();
+  }
 
   toggleDiv() {
     this.isDivVisible = !this.isDivVisible;
   }
+
 }
