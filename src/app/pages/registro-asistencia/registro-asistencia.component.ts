@@ -1,49 +1,34 @@
 import { CommonModule } from '@angular/common';
 import { ActualizarInstructorComponent } from '../actualizar-instructor/actualizar-instructor.component';
 import { Component, OnInit } from '@angular/core';
-import { InstructorService } from './../../shared/instructor_crud/instructor.service';
-import { instructorModel } from './../../shared/instructor_crud/instructor.model';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { GuardarAsistenciaComponent } from '../guardar-asistencia/guardar-asistencia.component';
+import { Observable } from 'rxjs';
+import { competenciaModel } from '../../shared/competencia_crud/competencia.model';
+import { CompetenciaService } from '../../shared/competencia_crud/competencia.service';
+
 
 @Component({
   selector: 'app-registro-asistencia',
   standalone: true,
-  imports: [CommonModule,ActualizarInstructorComponent, FormsModule,GuardarAsistenciaComponent],
+  imports: [CommonModule,ActualizarInstructorComponent, FormsModule],
   templateUrl: './registro-asistencia.component.html',
   styleUrl: './registro-asistencia.component.css'
 })
-export class RegistroAsistenciaComponent{
+
+export class RegistroAsistenciaComponent implements OnInit{
+
   isDivVisible: boolean = false;
-  guardarAsistencia: boolean = false
-  MostrarFichas: boolean = true
-  // id= ''
-  // instructor= new instructorModel("", "", "", "", "")
-  // id= ''
-  // instructor= new instructorModel("", "", "", "", "")
 
-  // constructor(
-  //   private instructorService: InstructorService,
-  //   private route: ActivatedRoute,
-  //   private router: Router
-  // ){ }
+  competencias: Observable<competenciaModel[]> | undefined
 
+  constructor(private competenciaService: CompetenciaService){}
 
-  // ngOnInit(){
-  //   this.id = this.route.snapshot.params['id']
-  //   if(this.id){
-  //     this.instructorService.obtenerInstructor(this.id).subscribe(data =>{
-  //       this.instructor = data[0]
-  //     });
-  //   }
-  // }
+  ngOnInit(){
+    this.competencias = this.competenciaService.obtenerCompetencias();
+  }
 
   toggleDiv() {
    this.isDivVisible = !this.isDivVisible;
   }
-  guardar(){
-    this.guardarAsistencia= !this.guardarAsistencia;
-    this.MostrarFichas= !this.MostrarFichas;
-  }
+
 }

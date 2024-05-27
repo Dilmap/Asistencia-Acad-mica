@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
@@ -13,7 +14,7 @@ import { GuardarAsistenciaComponent } from './pages/guardar-asistencia/guardar-a
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent, RegistroComponent,HomeComponent,RegistroAsistenciaComponent,VerificarAprendizComponent,ReporteDiarioComponent,ReportesComponent,QrcodeComponent,GuardarAsistenciaComponent],
+  imports: [RouterOutlet, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
