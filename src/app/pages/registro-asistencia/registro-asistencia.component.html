@@ -21,8 +21,9 @@
       </option>
     </select>
   </section>
-  <u><h2>FICHAS</h2></u>
-  <table>
+
+  <u  *ngIf=""><h2>FICHAS</h2></u >
+  <table *ngIf="">
     <tr class="encabezado_fichas">
       <th><div><img src="assets/imagen/Ficha.png" alt="">Numero de Ficha</div></th>
       <th><div><img src="assets/imagen/Programa.png" alt="">Programa de Formación</div></th>
@@ -36,4 +37,5 @@
       <td><button>Registrar Asistencia</button></td>
     </tr>
   </table>
+  <!-- <app-guardar-asistencia *ngIf=""></app-guardar-asistencia> -->
 </main>

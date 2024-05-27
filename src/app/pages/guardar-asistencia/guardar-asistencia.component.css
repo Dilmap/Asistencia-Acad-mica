@@ -1,0 +1,197 @@
+.container_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+table{
+    border: 0.1vw solid gray;
+    border-spacing: 0px;
+    width: 100%;
+    position: relative;
+}
+table img{
+width: 2vw;
+}
+.encabezado_fichas{
+    background-color: #009E00;
+    height: 3vw;
+    color: white;
+}
+.encabezado_fichas th{
+    border-bottom: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
+    font-size: 1.2vw;
+    height: inherit;
+    padding-left: 2vw;
+    text-align: left;
+}
+.encabezado_fichas div{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    gap: 0.5vw;
+}
+.tr_list{
+    text-align: center;
+    height: 2.5vw;
+}
+.tr_list td{
+    border: 0.1vw solid gray;
+    font-size: 1vw;
+    text-align: left;
+    padding-left: 2vw;
+}
+.nombre_td{
+    width: 26vw;
+}
+.tr_list button{
+    width: 3vw;
+    height: 2vw;
+    border: none;
+    background-color: white;
+}
+.td_programa img{
+    width: 1.5vw;
+}
+.estado{
+    font-size: 1vw;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+.Retrasado,.Excusa{
+    width: 1.8vw ;
+}
+h2{
+    font-size: 1.5vw;
+}
+.indicador_iconos{
+    display: flex;
+    gap: 4vw;
+}
+.indicador_iconos p{
+    font-size: 1vw;
+}
+.indicador_iconos article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+.indicador_iconos img{
+    width: 1.5vw;
+}
+.indicador{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.Buttons{
+    display: flex;
+    gap: 6vw;
+    justify-content: center;
+}
+.Buttons button{
+    background-color: #009E00;
+    border: none;
+    width: 9vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 0.8vw;
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  h2{
+    font-size: 2vw;
+  }
+  .indicador_iconos p{
+      font-size: 1.8vw;
+  }
+  .indicador_iconos img{
+    width: 2vw;
+  }
+  table img{
+    width: 2.5vw;
+  }
+  .encabezado_fichas th{
+    font-size: 2vw;
+  }
+  .encabezado_fichas{
+    height: 4.5vw;
+  }
+  .tr_list{
+    height: 4vw;
+  }
+  .tr_list td{
+    font-size: 1.8vw;
+    padding: 0.5vw;
+    text-align: center;
+  }
+  .td_programa img{
+    width: 2.5vw;
+  }
+  .Retrasado img,.Excusa img{
+    width: 3vw;
+  }
+  .Buttons button{
+    width: 16vw;
+    height: 4vw;
+    border-radius: 0.8vw;
+    font-size: 1.6vw;
+  }
+
+}
+@media (min-width: 500px) and (max-width: 700px) {
+  h2{
+    font-size: 3vw;
+  }
+  .indicador{
+    display: grid;
+    gap: 2vw;
+}
+  .indicador_iconos p{
+      font-size: 2.6vw;
+  }
+  .indicador_iconos{
+    gap: 2vw;
+  }
+  .indicador_iconos img{
+    width: 3vw;
+  }
+  .encabezado_fichas th{
+    font-size: 2.8vw;
+    padding: 1vw;
+  }
+  .encabezado_fichas img{
+    display: none;
+  }
+  .encabezado_fichas{
+    height: 8vw;
+  }
+  .tr_list td{
+    font-size: 2.2vw;
+    padding: 1.8vw;
+    height: 10vw;
+  }
+  .td_programa img{
+    width: 5vw;
+  }
+  .td_programa{
+    display: flex;
+    gap: 4vw;
+  }
+  .Retrasado,.Excusa img{
+    width: 2vw ;
+  }
+  .Buttons button{
+    width: 22vw;
+    height: 6vw;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 2.3vw;
+  }
+  .Buttons{
+    gap: 3vw;
+  }
+}

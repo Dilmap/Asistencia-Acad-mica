@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="guardar-asistencia.component.css">
+<div class="container_principal">
+    <div class="indicador">
+        <u><h2>Aprendices</h2></u>
+        <div class="indicador_iconos">
+            <article>
+              <img src="assets/imagen/Check.png" alt="">
+              <p>Asistencias</p>
+            </article>
+            <article>
+              <img src="assets/imagen/Equis.png" alt="">
+              <p>Inasistencias</p>
+            </article>
+            <article>
+              <img src="assets/imagen/Retrasado.png" alt="">
+              <p>Asistencia Tardia</p>
+            </article>
+            <article>
+                <img src="assets/imagen/Excusa 2.png" alt="">
+                <p>Excusa</p>
+            </article>
+        </div>
+    </div>
+    <table>
+        <tr class="encabezado_fichas">
+          <th><div><img src="assets/imagen/Nombre.png" alt="">Nombre Completo</div></th>
+          <th><div><img src="assets/imagen/Asistencia.png" alt="">Asistencia</div></th>
+          <th>Estado</th>
+        </tr>
+        <tr class="tr_list" id="roboto-regular">
+          <td class="nombre_td">Gabriel Ricardo Murallas Rodriguez</td>
+          <td class="td_programa">
+            <button><img src="assets/imagen/Check.png" alt=""></button>
+            <button><img src="assets/imagen/Equis.png" alt=""></button>
+            <button (click)="mostrarr()"><img class="Retrasado" src="assets/imagen/Retrasado.png" alt=""></button>
+            <div *ngIf="mostrar" class="hora_retrasado">
+              <input type="time">
+              <button>Guardar</button>
+            </div>
+            <button><img class="Excusa" src="assets/imagen/Excusa 2.png" alt=""></button>
+
+          </td>
+          <td class="estado">---------------</td>
+        </tr>
+    </table>
+    <div class="Buttons">
+        <button>Guardar asistencia </button>
+        <button>Generar pdf</button>
+        <button>Escanear codigo Qr</button>
+    </div>
+</div>

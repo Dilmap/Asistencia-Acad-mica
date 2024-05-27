@@ -28,7 +28,7 @@ export class RegistroAsistenciaComponent implements OnInit{
   }
 
   toggleDiv() {
-    this.isDivVisible = !this.isDivVisible;
+   this.isDivVisible = !this.isDivVisible;
   }
 
 }

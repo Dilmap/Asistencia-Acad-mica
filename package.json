@@ -18,9 +18,14 @@
     "@angular/platform-browser": "^17.1.0",
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
+<<<<<<< HEAD
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "mysql": "^2.18.1",
+=======
+    "ng-qrcode": "^17.0.0",
+    "ngx-qrcode": "^0.1.0-rc.1",
+>>>>>>> 7eb10061609367eb35bf3b1e3c23ea685f35d862
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

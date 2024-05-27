@@ -6,7 +6,7 @@ import { instructorModel } from './instructor.model';
   providedIn: 'root'
 })
 export class InstructorService {
-  DATABASE = 'http://localhost:3000'
+  DATABASE = 'http://localhost:3000' 
   constructor(private http: HttpClient) { }
 
   obtenerInstructores(){

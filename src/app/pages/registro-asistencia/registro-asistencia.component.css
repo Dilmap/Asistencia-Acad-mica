@@ -49,14 +49,14 @@ section{
   padding-left: 1vw;
 }
 .img_perfil button{
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: white;
   background: none;
   border: none;
   text-align: left;
 }
-.img_perfil span{
-  font-size: 1vw;
+.img_perfil p{
+  font-size: 2vw;
   color: white;
 }
 select{
@@ -192,6 +192,12 @@ table img{
   .encabezado_fichas div{
     gap: 0.8vw;
   }
+  .img_perfil button{
+    font-size: 1.5vw;
+  }
+  .img_perfil p{
+    font-size: 1.8vw;
+  }
 }
 @media (min-width: 500px) and (max-width: 700px) {
   main{
@@ -244,16 +250,16 @@ table img{
   .tr_list{
     text-align: center;
     height: 7.5vw;
-
   }
   .tr_list button{
-    width: 18.5vw;
-    height: 5vw;
+    width: 22vw;
+    height: 6vw;
     border-radius: 3vw;
-    font-size: 1.8vw;
+    text-align: center;
+    font-size: 2.3vw;
   }
   .tr_list td{
-    font-size: 2.2vw;
+    font-size: 2.8vw;
     padding: 1vw;
   }
   .encabezado_fichas th{
@@ -267,8 +273,8 @@ table img{
     top: 47vw;
     width: 3.5vw;
   }
-  .img_perfil span{
-    font-size: 3vw;
+  .img_perfil button{
+    font-size: 2.2vw;
   }
   .tipo_formacion{
     display: none;
