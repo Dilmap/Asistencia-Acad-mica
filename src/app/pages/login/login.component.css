@@ -67,7 +67,7 @@ button{
 .contenedor_adapter_img{
   position: absolute;
   right: 6.55vw;
-  
+
 }
 .contenedor_adapter_img img{
   width: 43vw;
@@ -85,7 +85,7 @@ button{
   display: none;
 }
 
-@media (min-width:600px) and (max-width:1100px) {
+@media (min-width:700px) and (max-width:1200px) {
   .container{
     padding-right: 16vw;
   }
@@ -93,7 +93,7 @@ button{
     font-size: 4vw;
   }
   .container_option_item{
-    gap: 6vw;
+    gap: 5vw;
     text-align: none;
   }
   .container_input{
@@ -116,7 +116,7 @@ button{
     width: 20vw;
   }
 }
-@media  (max-width:600px){
+@media (max-width:700px){
   main{
     background-color: white;
   }

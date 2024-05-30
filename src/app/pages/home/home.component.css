@@ -145,7 +145,7 @@ header img{
     font-size: 1.6vw;
   }
 }
-@media (min-width: 500px) and (max-width: 700px) {
+@media(max-width: 700px) {
   main{
     padding: 8vw 4vw;
     height: 100vh;

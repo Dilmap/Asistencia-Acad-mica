@@ -81,7 +81,7 @@ button{
   bottom: 0;
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   main{
     display: flex;
     justify-content: center;
@@ -103,10 +103,11 @@ button{
     width: 28vw;
     text-align: center;
   }
-  .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+  .container_option_item_input label,.form_registro h3,
+  .form_registro p, .form_registro button, .container_option_item_input select{
     font-size: 1.8vw;
   }
-  input{
+  input, .container_option_item_input select{
     width: 28vw;
     font-size: 1.4vw;
   }
@@ -131,7 +132,7 @@ button{
   }
 
 }
-@media (min-width: 500px) and (max-width: 800px) {
+@media(max-width: 700px) {
   main{
     display: flex;
     justify-content: center;
@@ -145,14 +146,15 @@ button{
     text-align: center;
     width: 41vw;
   }
-  .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
+  .container_option_item_input label,
+  .form_registro h3,.form_registro p, .form_registro button, .container_option_item_input select{
     font-size: 2.8vw;
   }
   .form_registro h3{
     width: 40vw;
     text-align: center;
   }
-  input{
+  input, .container_option_item_input select{
     width: 50vw;
     font-size: 2.2vw;
     border-radius: 4dvw;
