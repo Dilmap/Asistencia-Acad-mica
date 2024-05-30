@@ -1,11 +1,10 @@
 main{
     height: 100vh;
-    padding: 3vw 6vw;
+    padding: 3vw 10vw;
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 3vw;
 }
-
 header{
     display: flex;
     background-color: #009E00;
@@ -31,7 +30,7 @@ header img{
     font-size: 2vw;
 }
 .eleccion p{
-    font-size: 1vw;
+    font-size: 1.2vw;
     width: 70vw;
     line-height: 2vw;
 }
@@ -40,7 +39,6 @@ header img{
     flex-direction: column;
     background-color: #009E00;
     width: 25vw;
-    height: 16vw;
     gap: 2.5vw;
     border-radius: 1vw;
     padding: 2vw 3vw;
@@ -94,15 +92,20 @@ header img{
     font-size: 1vw;
 }
 
-@media (min-width: 700px) and (max-width:1200px) {
+@media(max-width: 900px) {
   main{
     padding: 3vw 4vw;
     height: 100vh;
   }
   header img{
-    width: 5vw;
+    width: 6vw;
     margin-left: 3vw;
     height: 8vw;
+  }
+  header{
+    height: 12vw;
+    font-size: 2.4vw;
+    gap: 8vw;
   }
   .eleccion{
     padding: 1vw 1vw;
@@ -159,7 +162,7 @@ header img{
     gap: 16vw;
   }
   .eleccion{
-    padding: 10vw 5vw;
+    padding: 4vw 0vw;
     gap: 10vw;
   }
   .eleccion h2{

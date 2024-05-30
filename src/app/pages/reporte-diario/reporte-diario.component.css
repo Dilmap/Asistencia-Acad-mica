@@ -75,9 +75,10 @@ section{
   display: grid;
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media(max-width: 900px) {
   main{
-    gap: 3.5vw;
+    padding: 3vw 4vw;
+    height: 100vh;
   }
   header{
     height: 12vw;
@@ -85,7 +86,9 @@ section{
     gap: 8vw;
   }
   header img{
-    width: 9vw;
+    width: 6vw;
+    margin-left: 3vw;
+    height: 8vw;
   }
   .informacion_programa p{
     font-size: 1.6vw;
@@ -121,19 +124,19 @@ section{
 }
 @media(max-width: 700px) {
   main{
-    gap: 4.5vw;
-    padding: 8vw 10vw;
-  }
-  header{
-    height: 14vw;
-    font-size: 2.5vw;
-    gap: 8vw;
+    padding: 8vw 4vw;
+    height: 100vh;
   }
   header img{
     width: 10vw;
   }
+  header{
+    height: 14vw;
+    font-size: 2.5vw;
+    gap: 16vw;
+  }
   .informacion_programa p{
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   section{
     height: 18vw;
@@ -144,11 +147,11 @@ section{
   }
   .encabezado th{
     font-size: 2.4vw;
-    padding: 1vw;
+    padding: 2vw;
   }
   .contenido td{
-    font-size: 2vw;
-    padding: 1vw;
+    font-size: 2.2vw;
+    padding: 2vw;
   }
   .contenido img{
     width: 4vw;

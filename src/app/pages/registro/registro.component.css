@@ -81,7 +81,7 @@ button{
   bottom: 0;
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media(max-width: 900px) {
   main{
     display: flex;
     justify-content: center;
@@ -92,7 +92,6 @@ button{
   }
   .container{
     padding-top: 0vw;
-    width: 50vw;
   }
   .form_registro{
     gap: 3vw;
@@ -101,15 +100,21 @@ button{
   }
   .form_registro h3{
     width: 28vw;
+    font-size: 2vw;
     text-align: center;
   }
-  .container_option_item_input label,.form_registro h3,
+
+  .container_option_item_input label,
   .form_registro p, .form_registro button, .container_option_item_input select{
     font-size: 1.8vw;
   }
   input, .container_option_item_input select{
     width: 28vw;
+    height: 4vw;
     font-size: 1.4vw;
+  }
+  .container_option{
+    gap: 2vw;
   }
   .container_rectangle_top,.container_rectangle_bottom{
     display: block;
@@ -156,8 +161,10 @@ button{
   }
   input, .container_option_item_input select{
     width: 50vw;
+    height: 6vw;
     font-size: 2.2vw;
-    border-radius: 4dvw;
+    padding-left: 2vw;
+    border-radius: 4vw;
   }
   .container_option{
     gap: 2.5vw;
@@ -168,25 +175,20 @@ button{
     border-radius: 4vw;
   }
   .contenedor_img_esquina{
-    height: 100vh;
-    position: relative;
-    display: block;
-  }
-  .contenedor_img_esquina img{
-    position: absolute;
-    bottom: 0;
-    width: 38vw;
-    right: 44vw;
+    display: none;
   }
   .container_logo{
     display: block;
-    position: relative;
   }
   .container_logo img{
-    width: 18vw;
-    position: absolute;
+    width: 30vw;
   }
   .container{
-    padding-top: 15vw;
+    padding-top: 0;
+    text-align: center;
+  }
+  .container_rectangle_bottom img{
+    width: 30vw;
+    bottom: 0;
   }
 }
