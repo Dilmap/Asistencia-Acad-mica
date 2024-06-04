@@ -11,7 +11,7 @@ header{
     background-color: #009E00;
     height: 6vw;
     border-radius: 1vw;
-    border: 0.1vw solid black;
+    border: 0.1vw solid gray;
     align-items: center;
     gap: 22vw;
     color: white;
@@ -29,7 +29,7 @@ section{
     justify-content: space-between;
     height: 4vw;
     border-radius: 1vw;
-    border: 0.1vw solid black;
+    border: 0.1vw solid gray;
 }
 .titulo{
     display: flex;
@@ -80,7 +80,7 @@ section{
     font-size: 1vw;
 }
 .reportes_filtros{
-    border: 0.1vw solid;
+    border: 0.1vw solid gray;
     border-spacing: 0px;
 }
 .encabezado{
@@ -92,8 +92,8 @@ section{
     border-right: none !important;
 }
 .encabezado th{
-    border-bottom: 0.1vw solid black;
-    border-right: 0.1vw solid black;
+    border-bottom: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
     font-size: 1.2vw;
 }
 .contenido{
@@ -101,7 +101,7 @@ section{
     height: 2vw;
 }
 .contenido td{
-    border-right: 0.1vw solid black;
+    border-right: 0.1vw solid gray;
     font-size: 1vw;
 }
 .indicador_iconos{
@@ -111,7 +111,7 @@ section{
   display: none;
 }
 
-@media (min-width:600px) and (max-width:1100px){
+@media(max-width: 900px){
     section{
         height: 6vw;
     }
@@ -151,7 +151,7 @@ section{
         font-size: 1.5vw;
     }
 }
-@media (max-width:600px){
+@media (max-width:700px){
     main{
         gap: 5vw;
     }
