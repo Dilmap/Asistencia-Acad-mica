@@ -10,34 +10,35 @@
       <div class="container_logo">
         <img src="assets\imagen\Logo-Sena.png" alt="">
       </div>
-      <form action="" class="form_registro">
+      <form class="form_registro" (ngSubmit)="agregoInstructores()">
         <h3 class="roboto-bold">Por favor registre su usuario en el formulario!</h3>
         <div class="container_option">
-            <div class="container_option_item_input" >
-              <label for="" class="roboto-regular">Nombre Completo:</label>
-              <input type="text">
-            </div>
-            <div class="container_option_item_input">
-              <select name="" id="">
-                <option value="">Cedula de Ciudadanía</option>
-                <option value="">Cedula de Extranjería</option>
-                <option value="">Permiso por proteccion temporal</option>
-              </select>
-            </div>
-            <div class="container_option_item_input">
-              <label for="" class="roboto-regular">Numero de Documento :</label>
-              <input type="text">
-            </div>
-            <div class="container_option_item_input">
-              <label for="" class="roboto-regular">Email :</label>
-              <input type="text">
-            </div>
-            <div class="container_option_item_input">
-              <label for="" class="roboto-regular">Contraseña :</label>
-              <input type="text">
-            </div>
+          <div class="container_option_item_input">
+            <label for="nombre" class="roboto-regular">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="instructor.nombre">
+          </div>
+          <div class="container_option_item_input">
+            <label for="tipoDocumento" class="roboto-regular">Tipo de Documento:</label>
+            <select id="tipoDocumento" name="tipoDocumento" [(ngModel)]="instructor.tipo_documento_iddocumento">
+              <option value="1">Cedula de Ciudadanía</option>
+              <option value="3">Permiso por Proteccion Temporal</option>
+              <option value="4">Cedula de Extranjería</option>
+            </select>
+          </div>
+          <div class="container_option_item_input">
+            <label for="numeroDocumento" class="roboto-regular">Numero de Documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" [(ngModel)]="instructor.numeroDocumento">
+          </div>
+          <div class="container_option_item_input">
+            <label for="email" class="roboto-regular">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="instructor.email">
+          </div>
+          <div class="container_option_item_input">
+            <label for="contrasena" class="roboto-regular">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" [(ngModel)]="instructor.password">
+          </div>
         </div>
-        <button  class="roboto-regular">Registrarse</button>
+        <button type="submit"  class="roboto-regular">Registrarse</button>
         <p class="roboto-regular">¿Ya tienes usuario? <a class="roboto-bold">Ingrese</a></p>
       </form>
     </div>

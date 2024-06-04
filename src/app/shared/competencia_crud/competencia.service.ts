@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { CompetenciaModel } from './competencias.model';
 
 
 @Injectable({
@@ -10,7 +11,7 @@ export class CompetenciaService {
   DATABASE = 'http://localhost:3000'
   constructor(private http: HttpClient) { }
 
-  obtenerCompetencias(): Observable<any>{
-    return this.http.get<any>(this.DATABASE + '/competencias');
+  obtenerCompetencias(){
+    return this.http.get<CompetenciaModel[]>(this.DATABASE + '/competencias');
   }
 }

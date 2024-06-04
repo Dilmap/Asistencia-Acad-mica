@@ -16,7 +16,7 @@
     <img class="flecha_abajo" src="assets/imagen/flecha_abajo.png" alt="">
     <select  class="Competencias" id="">
       <option value="">Selecciona una competencias</option>
-      <option *ngFor="let competencia of competencias">
+      <option *ngFor="let competencia of competencias | async">
         {{ competencia.nombre }}
       </option>
     </select>
@@ -30,10 +30,10 @@
       <th class="tipo_formacion"><div><img src="assets/imagen/Formacion.png" alt="">Tipo de Formación</div></th>
       <th></th>
     </tr>
-    <tr *ngFor="let ficha of fichaPrograma" class="tr_list" id="roboto-regular">
-      <td>{{ficha.numero}}</td>
-      <td class="td_programa">{{ficha.programa}}</td>
-      <td class="td_programa_tecnologo">{{ficha.tipoFormacion}}</td>
+    <tr *ngFor="let ficha of fichaProgramas | async" class="tr_list" id="roboto-regular">
+      <td>{{ficha.Numero}}</td>
+      <td class="td_programa">{{ficha.Programa}}</td>
+      <td class="td_programa_tecnologo">{{ficha.Formacion}}</td>
       <td><button>Registrar Asistencia</button></td>
     </tr>
   </table>

@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { CompetenciaService } from '../../shared/competencia_crud/competencia.service';
 import { GuardarAsistenciaComponent } from '../guardar-asistencia/guardar-asistencia.component';
+import { CompetenciaModel } from '../../shared/competencia_crud/competencias.model';
+import { FichaModel } from '../../shared/Ficha_crud/ficha.model';
 
 
 @Component({
@@ -20,8 +22,8 @@ export class RegistroAsistenciaComponent implements OnInit{
 
   isDivVisible: boolean = false;
 
-  competencias: any[]= [];
-  fichaPrograma: any[]= [];
+  competencias: Observable<CompetenciaModel[]> | undefined;
+  fichaProgramas: Observable<FichaModel[]> | undefined;
 
   constructor(
     private competenciaService: CompetenciaService,
@@ -29,12 +31,8 @@ export class RegistroAsistenciaComponent implements OnInit{
   ){}
 
   ngOnInit(){
-    this.competenciaService.obtenerCompetencias().subscribe((datos)=>{
-      this.competencias = datos;
-    });
-    this.fichaService.obtenerFichaPrograma().subscribe((datos)=> {
-      this.fichaPrograma = datos;
-    });
+    this.competencias = this.competenciaService.obtenerCompetencias();
+    this.fichaProgramas = this.fichaService.obtenerFichaPrograma()
   }
 
   toggleDiv() {

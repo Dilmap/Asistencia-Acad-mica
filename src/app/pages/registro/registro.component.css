@@ -106,7 +106,7 @@ button{
   .container_option_item_input label,.form_registro h3,.form_registro p, .form_registro button{
     font-size: 1.8vw;
   }
-  input{
+  input, select{
     width: 28vw;
     font-size: 1.4vw;
   }
