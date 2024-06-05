@@ -238,7 +238,7 @@ table img{
     width: 12vw;
   }
   .perfil_instructor p{
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
   }
   .encabezado_fichas{
@@ -263,7 +263,7 @@ table img{
     padding: 1vw;
   }
   .encabezado_fichas th{
-    font-size: 2.8vw;
+    font-size: 3vw;
     padding: 1vw;
     height: inherit;
   }
@@ -274,12 +274,9 @@ table img{
     width: 3.5vw;
   }
   .img_perfil button{
-    font-size: 2.2vw;
+    font-size: 2.5vw;
   }
-  .tipo_formacion{
-    display: none;
-  }
-  .td_programa_tecnologo{
+  .td_programa_tecnologo, .tipo_formacion{
     display: none;
   }
 }

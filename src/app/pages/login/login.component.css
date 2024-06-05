@@ -28,7 +28,7 @@ main{
   gap: 2vw;
 }
 .container_option_item label{
-  font-size: 1vw;
+  font-size: 1.4vw;
 }
 .container_option_item h1{
   font-size: 3vw;
@@ -36,11 +36,11 @@ main{
 }
 input{
   width: 22vw;
-  height: 2vw;
+  height: 2.2vw;
   border-radius: 2vw;
   border: 0.1vw solid rgba(0, 158, 0, 100%);
   padding: 0.5vw;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 .container_input{
   display: flex;
@@ -61,9 +61,12 @@ button{
   background-color: rgba(0, 158, 0, 100%);
   color: white;
   font-size: 1vw;
+  cursor: pointer;
   border: none;
 }
-
+button:hover{
+  background: rgb(5, 99, 5);
+}
 .contenedor_adapter_img{
   position: absolute;
   right: 6.55vw;
@@ -81,6 +84,11 @@ button{
   width: 15vw;
   left: 0;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
 .logo_verde{
   display: none;
 }
@@ -103,8 +111,10 @@ button{
     font-size: 2.5vw;
   }
   input,button{
-    width: 28vw;
+    width: 32vw;
     height: 4vw;
+    padding: 1vw;
+    font-size: 2vw;
   }
   button{
     font-size: 2vw;
@@ -127,7 +137,8 @@ button{
     display: flex;
   }
   .logo_verde{
-    width: 40vw;
+    width: 28vw;
+    height: 28vw;
     display: block;
   }
   .container{
@@ -152,12 +163,12 @@ button{
     gap: 3vw;
   }
   .container_option_item label{
-    font-size: 3vw;
+    font-size: 4vw;
   }
   input{
     width: 55vw;
     height: 6vw;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     border-radius: 5vw;
   }
   button{
