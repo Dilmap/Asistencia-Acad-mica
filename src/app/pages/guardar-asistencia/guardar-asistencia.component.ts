@@ -10,8 +10,12 @@ import { Component } from '@angular/core';
 })
 export class GuardarAsistenciaComponent {
   mostrar:boolean=false ;
+  mostrarExcusa:boolean = false;
 
   mostrarr(){
     this.mostrar=!this.mostrar;
+  }
+  mostrarE(){
+    this.mostrarExcusa=!this.mostrarExcusa;
   }
 }

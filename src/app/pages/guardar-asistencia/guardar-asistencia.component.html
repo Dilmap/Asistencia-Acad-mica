@@ -34,11 +34,21 @@
             <button><img src="assets/imagen/Equis.png" alt=""></button>
             <button (click)="mostrarr()"><img class="Retrasado" src="assets/imagen/Retrasado.png" alt=""></button>
             <div *ngIf="mostrar" class="hora_retrasado">
-              <input type="time">
-              <button>Guardar</button>
-            </div>
-            <button><img class="Excusa" src="assets/imagen/Excusa 2.png" alt=""></button>
+              <div class="hora_input">
+                <input type="time">
+                <button>Guardar</button>
+              </div>
 
+            </div>
+            <button (click)="mostrarE()"><img class="Excusa" src="assets/imagen/Excusa 2.png" alt=""></button>
+            <div *ngIf="mostrarExcusa" class="excusa" id="roboto-regular">
+              <label for="" class="roboto-regular">Escriba el motivo de la excusa</label>
+              <div class="excusa_input">
+                <input type="text">
+                <button>Guardar</button>
+              </div>
+              <button>Subir PDF</button>
+            </div>
           </td>
           <td class="estado">---------------</td>
         </tr>

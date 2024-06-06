@@ -1,9 +1,9 @@
-export class instructorModel{
+export class InstructorModel{
   constructor(
     public numeroDocumento: string,
     public nombre: string,
     public tipo_documento_iddocumento: string,
     public email: string,
-    public contraseña: string
+    public password: string
   ){}
 }

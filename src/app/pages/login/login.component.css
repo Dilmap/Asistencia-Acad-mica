@@ -31,7 +31,7 @@ main{
   font-size: 1vw;
 }
 .container_option_item h1{
-  font-size: 2.5vw;
+  font-size: 3vw;
   text-align: center;
 }
 input{
@@ -67,7 +67,7 @@ button{
 .contenedor_adapter_img{
   position: absolute;
   right: 6.55vw;
-  
+
 }
 .contenedor_adapter_img img{
   width: 43vw;
@@ -85,7 +85,7 @@ button{
   display: none;
 }
 
-@media (min-width:600px) and (max-width:1100px) {
+@media(max-width: 900px) {
   .container{
     padding-right: 16vw;
   }
@@ -93,7 +93,7 @@ button{
     font-size: 4vw;
   }
   .container_option_item{
-    gap: 6vw;
+    gap: 5vw;
     text-align: none;
   }
   .container_input{
@@ -116,59 +116,60 @@ button{
     width: 20vw;
   }
 }
-@media  (max-width:600px){
+@media (max-width: 700px){
   main{
     background-color: white;
   }
   .contenedor_adapter_img{
     display: none;
   }
-  .logo_verde{
+  .logo_verde img{
     display: flex;
   }
   .logo_verde{
-    display: flex;
-    position: absolute;
-    top: 4vw;
-    left: 26vw;
+    width: 40vw;
+    display: block;
   }
   .container{
     width: 100%;
-    padding-top: 22vw;
+    flex-direction: column;
     text-align: none;
-    justify-content: none;
+    gap: 2vw;
+    justify-content: center;
     place-items: none;
+    padding-right: 0;
   }
   .container_option_item{
-    gap: 8vw;
+    gap: 5vw;
   }
   .container_option_item h1{
     font-size: 8vw;
   }
   .container_input{
-    gap: 5vw;
+    gap: 4vw;
   }
   .container_option_item_input{
-    gap: 3.6vw;
+    gap: 3vw;
   }
   .container_option_item label{
-    font-size: 5vw;
+    font-size: 3vw;
   }
   input{
-    width: 71vw;
-    height: 7vw;
+    width: 55vw;
+    height: 6vw;
+    font-size: 2.5vw;
     border-radius: 5vw;
   }
   button{
-    width: 70vw;
+    width: 55vw;
     height: 8vw;
     border-radius: 4vw;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   p{
     font-size: 3.5vw;
   }
   .contenedor_img_esquina img{
-    width: 29vw;
+    width: 28vw;
   }
 }
