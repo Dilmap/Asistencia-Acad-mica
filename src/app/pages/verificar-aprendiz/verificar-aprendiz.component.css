@@ -24,7 +24,7 @@ header img{
     grid-template-columns: 50% 50%;
 }
 section label{
-    font-size: 1.1vw;
+    font-size: 1.4vw;
 }
 select{
   width: 18vw;
@@ -36,12 +36,13 @@ select{
   font-size: 1.1vw;
   appearance: none;
   border: none;
+  outline: none;
 }
 .flecha_abajo{
   position: absolute;
   width: 1.2vw;
-  top: 23.8vw;
-  left: 28vw;
+  top: 24vw;
+  left: 29vw;
 }
 .validar_datos{
     display: flex;
@@ -66,6 +67,10 @@ select{
   color: white;
   background-color: #008400;
   font-size: 1vw;
+  cursor: pointer;
+}
+.validar_datos button:hover{
+  background: rgb(5, 99, 5);
 
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -85,6 +90,8 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 1vw;
     padding: 1vw;
     border: none;
+    font-size: 1.1vw;
+    outline: none;
 }
 .img_qr{
   align-items: center;
@@ -110,7 +117,6 @@ input[type="number"]::-webkit-outer-spin-button {
   section label{
     font-size: 2vw;
  }
-
   select{
     width: 20vw;
     height: 2.8vw;
@@ -156,7 +162,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 @media(max-width:700px) {
   main{
-    gap: 6vw;
+    gap: 7vw;
     padding: 8vw 10vw;
   }
   header{
@@ -168,52 +174,54 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 10vw;
   }
   select{
-    width: 26vw;
-    height: 4vw;
+    width: 32vw;
+    height: 4.5vw;
     padding: 0vw 1.5vw;
-    font-size: 2vw;
+    font-size: 2.8vw;
+    border-radius: 1.8vw;
   }
   .sections label{
-    font-size: 2.5vw;
+    font-size: 3vw;
  }
   .sections{
     display: flex;
-    gap: 8vw;
+    gap: 11vw;
     flex-direction: column-reverse;
     align-items: center;
 }
   .flecha_abajo{
     position: absolute;
     width: 2.8vw;
-    top: 59.2vw;
-    left: 58vw;
+    top: 66vw;
+    left: 62vw;
   }
   .validar_datos{
-    width: 45vw;
-    height: 45vw;
+    width: 50vw;
+    height: 50vw;
     align-items: center;
     gap: 3.5vw;
     border-radius: 2vw;
   }
   .validar_datos h3{
-    font-size: 3.8vw;
+    font-size: 4.5vw;
   }
   .validar_datos button{
-    height: 5vw;
-    width: 15vw;
-    border-radius: 1vw;
-    font-size: 2.2vw;
+    height: 5.2vw;
+    width: 17vw;
+    border-radius: 2vw;
+    font-size: 2.4vw;
   }
   .inputs{
       gap: 2vw;
   }
   .inputs input{
       border-radius: 1vw;
-      width: 26vw;
-      height: 4vw;
+      width: 32vw;
+      height: 4.5vw;
+      border-radius: 1.8vw;
   }
   .img_qr{
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .img_qr img{
     display: none;

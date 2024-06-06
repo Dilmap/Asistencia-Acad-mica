@@ -40,6 +40,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 1vw;
   padding-left: 0.5vw;
   border-right: 0.3vw solid transparent;
+  outline: none;
 }
 .container_option_item_input label,.form_registro p, .form_registro button{
   font-size: 1.2vw;
@@ -54,6 +55,7 @@ input{
   border: 0.1vw solid rgba(0,158, 0, 100%);
   font-size: 0.8vw;
   padding: 0.5vw;
+  outline: none;
 }
 button{
   width: 20vw;
