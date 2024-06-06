@@ -31,6 +31,6 @@ export const routes: Routes = [
     path: 'reporteDiario', title: 'Reporte Diario', component: ReporteDiarioComponent,
   },
   {
-    path: '', redirectTo: 'reporte', pathMatch: 'full'
+    path: '', redirectTo: 'registroAsistencia', pathMatch: 'full'
   }
 ];
