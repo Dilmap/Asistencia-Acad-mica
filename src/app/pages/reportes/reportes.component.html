@@ -10,7 +10,24 @@
       <h2>Reportes de Asistencia</h2>
     </div>
     <div class="Filtros">
-      <button>Fecha</button>
+      <button (click)="mostrarr()">Fecha</button>
+      <div *ngIf="mostrarcalendario" class="calendarios">
+        <mat-form-field appearance="fill">
+          <mat-label>Fecha de inicio</mat-label>
+          <input matInput [matDatepicker]="startDate" [(ngModel)]="startDateValue">
+          <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+          <mat-datepicker #startDate></mat-datepicker>
+        </mat-form-field>
+        
+        <mat-form-field appearance="fill">
+          <mat-label>Fecha de fin</mat-label>
+          <input matInput [matDatepicker]="endDate" [(ngModel)]="endDateValue">
+          <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+          <mat-datepicker #endDate></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+
       <select class="select_competencias" name="" id="">
         <option value="" selected disabled hidden>Competencias</option>
         <option value="">Desarrollo de componentes informaticos</option>
@@ -45,6 +62,7 @@
     <article>
       <img src="assets/imagen/TresPuntos.png" alt="">
       <h3>Ver Detalles</h3>
+      <h3>Ver Detalles</h3>
     </article>
   </div>
   <table class="reportes_filtros" id="roboto-regular">
@@ -74,7 +92,7 @@
       <th>Ficha</th>
       <th><img src="assets/imagen/Check.png" alt=""></th>
       <th><img src="assets/imagen/Equis.png" alt=""></th>
-      <th class="detalles">gdsfgs</th>
+      <th class="detalles_th"><p>gdsfgs</p></th>
     </tr>
     <tr class="contenido">
       <td>15/05/2024

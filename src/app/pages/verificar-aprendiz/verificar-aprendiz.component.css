@@ -13,7 +13,8 @@ header{
   align-items: center;
   gap: 22vw;
   color: white;
-  font-size: 1.3vw;padding: 0.8vw;
+  font-size: 1.3vw;
+  padding: 0.8vw;
 }
 header img{
   width: 4vw;
@@ -32,7 +33,7 @@ select{
   color: white;
   background-color: #008400;
   border-radius: 1vw;
-  padding: 0vw 1.5vw;
+  padding: 0vw 0.5vw;
   font-size: 1.1vw;
   appearance: none;
   border: none;
@@ -40,9 +41,9 @@ select{
 }
 .flecha_abajo{
   position: absolute;
-  width: 1.2vw;
-  top: 24vw;
-  left: 29vw;
+  width: 1vw;
+  top: 23.8vw;
+  left: 30vw;
 }
 .validar_datos{
     display: flex;
@@ -78,7 +79,9 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+input, select{
+  outline: none;
+}
 .inputs{
     display: flex;
     flex-direction: column;
@@ -94,12 +97,12 @@ input[type="number"]::-webkit-outer-spin-button {
     outline: none;
 }
 .img_qr{
-  align-items: center;
   font-size: 1.3vw;
   text-align: center;
 }
 .img_qr img{
-  width: 32vw ;
+  width: 38vw ;
+  padding: 2vw;
 }
 @media(max-width: 900px) {
   main{
@@ -167,8 +170,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   header{
     height: 14vw;
+    border-radius: 2vw;
+    gap: 7vw;
     font-size: 2.5vw;
-    gap: 8vw;
   }
   header img{
     width: 10vw;

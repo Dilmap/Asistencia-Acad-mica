@@ -72,6 +72,7 @@ button:hover{
   position: absolute;
   right: 6.55vw;
 
+
 }
 .contenedor_adapter_img img{
   width: 43vw;
@@ -186,3 +187,4 @@ input[type=number]::-webkit-outer-spin-button {
     width: 28vw;
   }
 }
+

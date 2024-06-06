@@ -75,11 +75,12 @@ section{
 }
 .filtros_aplicados{
     display: flex;
-    gap: 14vw;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-size: 1vw;
 }
 .reportes_filtros{
+    border: 0.1vw solid gray;
     border: 0.1vw solid gray;
     border-spacing: 0px;
 }
@@ -94,6 +95,8 @@ section{
 .encabezado th{
     border-bottom: 0.1vw solid gray;
     border-right: 0.1vw solid gray;
+    border-bottom: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
     font-size: 1.2vw;
 }
 .contenido{
@@ -102,6 +105,7 @@ section{
 }
 .contenido td{
     border-right: 0.1vw solid gray;
+    border-right: 0.1vw solid gray;
     font-size: 1vw;
 }
 .indicador_iconos{
@@ -109,6 +113,15 @@ section{
 }
 .responsive{
   display: none;
+}
+.calendarios{
+    background-color: #009E00;
+    position: absolute;
+    display: flex;
+    padding: 1.5vw;
+    gap: 1vw;
+    left: 41vw;
+    top: 16vw;
 }
 
 @media(max-width: 900px){
@@ -242,4 +255,8 @@ section{
     .fecha{
         width: 22vw;
     }
+    .detalles_th p{
+      display: none;
+    }
+
 }

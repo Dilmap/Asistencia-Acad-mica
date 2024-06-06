@@ -1,25 +1,24 @@
 import { FichaService } from './../../shared/Ficha_crud/ficha.service';
 import { CommonModule } from '@angular/common';
 import { ActualizarInstructorComponent } from '../actualizar-instructor/actualizar-instructor.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { CompetenciaService } from '../../shared/competencia_crud/competencia.service';
 import { GuardarAsistenciaComponent } from '../guardar-asistencia/guardar-asistencia.component';
 import { CompetenciaModel } from '../../shared/competencia_crud/competencias.model';
 import { FichaModel } from '../../shared/Ficha_crud/ficha.model';
-
-
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-registro-asistencia',
   standalone: true,
-  imports: [CommonModule,ActualizarInstructorComponent, FormsModule, GuardarAsistenciaComponent],
+  imports: [CommonModule,ActualizarInstructorComponent, FormsModule, GuardarAsistenciaComponent,MatPaginatorModule],
   templateUrl: './registro-asistencia.component.html',
   styleUrl: './registro-asistencia.component.css'
 })
 
 export class RegistroAsistenciaComponent implements OnInit{
-
   isDivVisible: boolean = false;
 
   competencias: Observable<CompetenciaModel[]> | undefined;
