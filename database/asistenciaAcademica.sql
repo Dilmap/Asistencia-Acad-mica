@@ -231,7 +231,7 @@ CREATE TABLE `instructors` (
   `nombre` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tipo_documento_iddocumento` int unsigned NOT NULL,
   `email` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `contrasena` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`numeroDocumento`),
   UNIQUE KEY `instructors_numerodocumento_unique` (`numeroDocumento`),
   UNIQUE KEY `instructors_email_unique` (`email`),
