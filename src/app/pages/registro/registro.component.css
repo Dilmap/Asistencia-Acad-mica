@@ -5,7 +5,8 @@ main{
 }
 .container{
   padding-top: 7vw;
-  width: 40vw;
+  text-align: center;
+  display: grid;
 }
 .container_option{
   display: grid;
@@ -16,16 +17,22 @@ main{
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  align-items: center;
+  text-align: center;
   width: 25vw;
+  align-items: center;
 }
 .container_option_item_input{
   display: grid;
   gap: 0.6vw;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
 .container_option_item_input select{
-  width: 22vw;
-  height: 4.5vh;
+  width: 24vw;
+  height: 2.5vw;
   color: white;
   background-color: #008400;
   border: none;
@@ -38,12 +45,11 @@ main{
   font-size: 1.2vw;
 }
 .form_registro h3{
-  font-size: 1.3vw;
-  width: 23vw;
+  font-size: 1.2vw;
 }
 input{
-  width: 22vw;
-  height: 4vh;
+  width: 24vw;
+  height: 2.5vw;
   border-radius: 2vw;
   border: 0.1vw solid rgba(0,158, 0, 100%);
   font-size: 0.8vw;
@@ -56,13 +62,19 @@ button{
   background: rgba(0,158, 0, 100%);
   color: white;
   border: none;
+  cursor: pointer;
+}
+button:hover{
+  background: rgb(5, 99, 5);
 }
 .container_foto{
   position: relative;
   left: 12vw;
+  width: 43vw;
 }
 .container_foto img{
   width: 46vw;
+  height: 46vw;
 }
 .contenedor_img_esquina{
   display: none;
@@ -99,19 +111,19 @@ button{
     width: 50vw;
   }
   .form_registro h3{
-    width: 28vw;
     font-size: 2vw;
     text-align: center;
   }
 
   .container_option_item_input label,
   .form_registro p, .form_registro button, .container_option_item_input select{
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   input, .container_option_item_input select{
-    width: 28vw;
+    width: 30vw;
     height: 4vw;
-    font-size: 1.4vw;
+    border-radius: 2vw;
+    font-size: 1.8vw;
   }
   .container_option{
     gap: 2vw;
@@ -135,7 +147,9 @@ button{
     width: 25vw;
     bottom: 0;
   }
-
+  button{
+    width: 25vw;
+  }
 }
 @media(max-width: 700px) {
   main{
@@ -147,7 +161,7 @@ button{
     display: none;
   }
   .form_registro{
-    gap: 5vw;
+    gap: 4vw;
     text-align: center;
     width: 41vw;
   }
@@ -162,7 +176,7 @@ button{
   input, .container_option_item_input select{
     width: 50vw;
     height: 6vw;
-    font-size: 2.2vw;
+    font-size: 3vw;
     padding-left: 2vw;
     border-radius: 4vw;
   }
@@ -170,7 +184,7 @@ button{
     gap: 2.5vw;
   }
   button{
-    width: 30vw;
+    width: 40vw;
     height: 4vh;
     border-radius: 4vw;
   }
@@ -181,10 +195,12 @@ button{
     display: block;
   }
   .container_logo img{
-    width: 30vw;
+    width: 28vw;
+    height: 28vw;
   }
   .container{
     padding-top: 0;
+    gap: 2vw;
     text-align: center;
   }
   .container_rectangle_bottom img{
