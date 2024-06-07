@@ -3,14 +3,14 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { InstructorService } from './../../shared/instructor_crud/instructor.service';
 import { Component } from '@angular/core';
 import { InstructorModel } from '../../shared/instructor_crud/instructor.model';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-registro',
   standalone: true,
-  imports: [FormsModule, CommonModule, ReactiveFormsModule],
+  imports: [FormsModule, CommonModule, ReactiveFormsModule, RouterLink],
   templateUrl: './registro.component.html',
   styleUrl: './registro.component.css'
 })
@@ -33,6 +33,16 @@ export class RegistroComponent {
     });
   }
 
+  validarPassword(password: string): boolean {
+    const Number = /[0-9]/;
+    const Upper = /[a-z]/;
+
+    const hasNumber = Number.test(password);
+    const hasUpper = Upper.test(password);
+
+    return hasNumber && hasUpper;
+  }
+
   agregoInstructores() {
     if (this.registroForm.invalid) {
       this.mostrarErrores();
@@ -44,7 +54,6 @@ export class RegistroComponent {
     if (!isValidPassword) {
       alert('La contraseña debe tener como minimo una letra y un numero.');
       return;
-
     }
 
     const hashedPassword = CryptoJS.SHA256(formValues.password).toString(CryptoJS.enc.Hex);
@@ -52,12 +61,8 @@ export class RegistroComponent {
 
     this.instructorService.agregarInstructor(instructorData).subscribe(
       (response) => {
-        console.log('Instructor agregado', response);
         alert(response);
         this.router.navigate(['login']);
-      },
-      (error) => {
-        console.error('Error', error);
       }
     );
   }
@@ -69,13 +74,12 @@ export class RegistroComponent {
         const errors = controls[name].errors;
         if (errors?.['required']) {
           alert(`El ${name} es requerido.`);
+          break;
         }
         else if (errors?.['minlength']) {
           const minLength = errors['minlength'].requiredLength;
           alert(`El ${name} debe tener al menos ${minLength} caracteres.`);
-        }
-        else if (name === 'password' && errors?.['invalidPassword']) {
-          alert('El password no cumple con los requisitos.');
+          break;
         }
         else if (errors?.['email']) {
           alert(`${name} no es un email válido.`);
@@ -83,16 +87,5 @@ export class RegistroComponent {
       }
     }
   }
-
-  validarPassword(password: string): boolean {
-    const regexNumber = /[0-9]/;
-    const regexUpper = /[a-z]/;
-
-    const hasNumber = regexNumber.test(password);
-    const hasUpper = regexUpper.test(password);
-
-    return hasNumber && hasUpper;
-  }
-
   get form() { return this.registroForm.controls; }
 }

@@ -27,7 +27,7 @@
           </div>
           <div class="container_option_item_input">
             <label class="roboto-regular">Numero de Documento:</label>
-            <input type="text" formControlName="numeroDocumento">
+            <input type="number" formControlName="numeroDocumento">
           </div>
           <div class="container_option_item_input">
             <label class="roboto-regular">Email:</label>
@@ -39,7 +39,7 @@
           </div>
         </div>
         <button type="submit" class="roboto-regular">Registrarse</button>
-        <p class="roboto-regular">¿Ya tienes usuario? <a class="roboto-bold">Ingrese</a></p>
+        <p class="roboto-regular">¿Ya tienes usuario? <a class="roboto-bold" [routerLink]="['/login']" routerLinkActive="router-link-active" >Ingrese</a></p>
       </form>
     </div>
     <div class="contenedor_img_esquina">
