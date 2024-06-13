@@ -23,6 +23,57 @@ section{
   display: flex;
   gap: 3vw;
 }
+
+.custom-select {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.select-trigger {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 24vw;
+  height: 6vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  background-color: #009E00;
+  color: white;
+  font-size: 1vw;
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 0.1vw solid #ccc;
+  background-color: #009E00;
+  z-index: 1000;
+  color: white;
+  width: 24vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 30vw;
+}
+
+.select-option {
+  padding: 10px;
+  cursor: pointer;
+  border-top: solid 0.1vw #ccc;
+  color: black;
+  background-color: white;
+}
+
+.select-option:hover {
+  background-color: #009E00;
+  color: white;
+}
+
+
 .perfil_instructor{
   display: flex;
   background-color: #009E00;
