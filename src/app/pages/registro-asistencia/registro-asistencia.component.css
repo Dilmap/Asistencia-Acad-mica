@@ -26,7 +26,7 @@ section{
 .perfil_instructor{
   display: flex;
   background-color: #009E00;
-  width: 53vw;
+  width: 52vw;
   height: 6vw;
   border-top-left-radius: 0.8vw;
   border-bottom-left-radius: 0.8vw;
@@ -69,6 +69,7 @@ select{
   padding-left: 1.7vw;
   font-size: 1.3vw;
   appearance: none;
+  outline: none;
 }
 option{
   border: 0.1vw solid #009E00;
@@ -128,11 +129,9 @@ table img{
   font-size: 1vw;
 }
 
-
-
 @media(max-width: 900px) {
   main{
-    gap: 3.5vw;
+    gap: 6vw;
   }
   header{
     height: 8vw;
@@ -145,7 +144,8 @@ table img{
   }
   .perfil_instructor{
     height: 8vw;
-    gap: 11vw;
+    gap: 5vw;
+    width: 48vw;
     align-items: center;
   }
   h2{
@@ -154,17 +154,18 @@ table img{
   select{
     background-color: #009E00;
     height: 8vw;
-    padding-left: 1.7vw;
-    font-size: 1.4vw;
+    padding-left: 0.5vw;
+    font-size: 2vw;
+    width: 30vw;
   }
   .flecha_abajo{
     position: absolute;
-    right: 11vw;
-    top: 17.5vw;
+    right: 10.5vw;
+    top: 20vw;
     width: 1.5vw;
   }
   .perfil_instructor p{
-    font-size: 1.6vw;
+    font-size: 2vw;
   }
   .encabezado_fichas{
     height: 4.5vw;
@@ -186,17 +187,24 @@ table img{
     font-size: 1.8vw;
   }
   .encabezado_fichas th{
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     height: inherit;
   }
   .encabezado_fichas div{
     gap: 0.8vw;
   }
   .img_perfil button{
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .img_perfil p{
-    font-size: 1.8vw;
+    font-size: 3vw;
+  }
+  .img_perfil img{
+    padding-left: 0.6vw;
+    width: 8vw;
+  }
+  .img_perfil{
+    gap: 1.5vw;
   }
 }
 @media(max-width: 700px) {

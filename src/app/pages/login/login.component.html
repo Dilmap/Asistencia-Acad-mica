@@ -6,20 +6,20 @@
     <div>
       <img class="logo_verde" src="assets/imagen/Logo-Verde.png" alt="">
     </div>
-    <form class="container_option_item">
+    <form [formGroup]="loginForm" (ngSubmit)="validoInstructores()" class="container_option_item">
       <h1 class="roboto-bold">Bienvenido!</h1>
       <div class="container_input">
         <div class="container_option_item_input">
           <label for="" class="roboto-regular">Numero de identidad :</label>
-          <input type="number">
+          <input type="number" formControlName="numeroDocumento">
         </div>
         <div class="container_option_item_input">
           <label for="" class="roboto-regular">Contraseña:</label>
-          <input type="text">
+          <input type="password" formControlName="password">
         </div>
       </div>
       <div>
-        <button>Ingresar</button>
+        <button type="submit">Ingresar</button>
       </div>
       <p class="roboto-regular">¿No tienes usuario? <a [routerLink]="['/registro']" routerLinkActive="router-link-active"  class="roboto-bold">Registrarse</a></p>
     </form>

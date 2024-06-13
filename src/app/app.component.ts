@@ -14,9 +14,7 @@ import { GuardarAsistenciaComponent } from './pages/guardar-asistencia/guardar-a
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule,RegistroAsistenciaComponent,RegistroComponent,HomeComponent,
-    LoginComponent,VerificarAprendizComponent,ReporteDiarioComponent,ReportesComponent
-  ],
+  imports: [RouterOutlet, HttpClientModule,ReportesComponent,VerificarAprendizComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

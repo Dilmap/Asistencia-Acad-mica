@@ -1,15 +1,15 @@
 .actualizar_datos{
-    width: 24vw;
+    width: 20vw;
     position: absolute;
     display: flex;
     flex-direction: column;
     background-color: #009E00;
-    height: 29vw;
+    height: 25vw;
     border-radius: 0.5vw;
-    left: 37vw;
-    top: 9vw;
-    padding: 3vw;
-    gap: 4vw;
+    left: 20vw;
+    top: 18.5vw;
+    padding: 2vw;
+    gap: 2vw;
     color: white;
   }
   .actualizar_datos label{
@@ -20,6 +20,9 @@
       height: 1.5vw;
       border: none;
       border-radius: 0.3vw;
+      outline: none;
+      padding-left: 0.5vw;
+      font-size: 1vw;
   }
   .actualizar_datos button{
     height: 2vw;
@@ -27,11 +30,40 @@
       border: none;
       color: white;
       font-size: 0.8vw;
-      border-radius: 0.3vw;
+      border-radius: 1vw;
+      cursor: pointer;
+  }
+  .actualizar_datos button:hover{
+    background: rgb(5, 99, 5);
   }
   .actu_correo,.actu_contra{
     display: flex;
     flex-direction: column;
     gap: 1vw;
   }
-  
+@media (max-width: 900px) {
+  .actualizar_datos{
+    width: 30vw;
+    height: 35vw;
+    border-radius: 1vw;
+    left: 20vw;
+    top: 23vw;
+    gap: 3vw;
+  }
+  .actualizar_datos label{
+    font-size: 1.8vw;
+  }
+  .actualizar_datos input{
+      height: 3vw;
+      border-radius: 1.5vw;
+      padding-left: 0.8vw;
+      font-size: 1.8vw;
+  }
+  .actualizar_datos button{
+    height: 3.5vw;
+      background-color: #008400;
+      font-size: 2vw;
+      border-radius: 1.2vw;
+
+  }
+}

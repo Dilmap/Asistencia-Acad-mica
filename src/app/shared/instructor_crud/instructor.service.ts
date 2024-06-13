@@ -26,7 +26,7 @@ export class InstructorService {
     return this.http.put<string>(`${this.DATABASE}/instructors/actualizar/${instructor.numeroDocumento}`, instructor);
   }
 
-  borrarUsuario(numeroDocumento: string){
-    return this.http.delete<string>(`${this.DATABASE}/instructors/borrar/${numeroDocumento}`);
+  inicioSesionUsuario(numeroDocumento: string, password: string){
+    return this.http.post<string>(`${this.DATABASE}/instructors/login`, {numeroDocumento, password});
   }
 }
