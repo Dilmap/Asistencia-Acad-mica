@@ -13,21 +13,27 @@
       <p class="roboto-regular" for="">3/11/2002 <br><span>15:30</span></p>
     </div>
     <app-actualizar-instructor  *ngIf="isDivVisible" style="position: absolute;top: 0px;left: 0px;" ></app-actualizar-instructor>
-    <img class="flecha_abajo" src="assets/imagen/flecha_abajo.png" alt="">
-    <select  class="Competencias" id="">
-      <option value="">Selecciona una competencias</option>
-      <option *ngFor="let competencia of competencias | async">
-        {{ competencia.nombre }}
-      </option>
-    </select>
+    <div class="custom-select">
+      <div class="select-trigger" (click)="toggleDropdown()">
+        {{ selectedOption?.nombre || placeholder }}
+      </div>
+      <div class="select-dropdown" *ngIf="isDropdownOpen" (click)="$event.stopPropagation()">
+        <div class="select-option" *ngFor="let competencia of competencias | async" (click)="selectOption(competencia)">
+          {{ competencia.nombre }}
+        </div>
+      </div>
+    </div>
+    
+    
   </section>
 
-  <u  *ngIf=""><h2>FICHAS</h2></u >
+  <u><h2>FICHAS</h2></u >
   <table>
     <tr class="encabezado_fichas">
       <th><div><img src="assets/imagen/Ficha.png" alt="">Numero de Ficha</div></th>
       <th><div><img src="assets/imagen/Programa.png" alt="">Programa de Formación</div></th>
       <th class="tipo_formacion"><div><img src="assets/imagen/Formacion.png" alt="">Tipo de Formación</div></th>
+      <th></th>
     </tr>
     <tr *ngFor="let ficha of fichaProgramas | async" class="tr_list" id="roboto-regular">
       <td>{{ficha.Numero}}</td>
